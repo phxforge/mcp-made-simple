@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Email Inbox → Prioritized Task List",
+    "problem": "I spend 30+ minutes every morning sorting through emails.",
+    "solution": "AI reads incoming emails, extracts action items, prioritizes based on context, creates Todoist tasks.",
+    "systems": ["gmail", "todoist"],
+    "roles": ["founder", "consultant"],
+    "complexity": "beginner",
+    "timeSaved": "30 min → 2 min"
+  },
+  {
+    "id": 2,
+    "title": "GitHub Issues → Linear Tasks with Context",
+    "problem": "Manually copying bug reports from GitHub to Linear loses context.",
+    "solution": "AI monitors GitHub issues, analyzes severity, creates Linear tasks with full context and assigns to team.",
+    "systems": ["github", "linear"],
+    "roles": ["developer"],
+    "complexity": "intermediate",
+    "timeSaved": "2 hours/week"
+  },
+  {
+    "id": 3,
+    "title": "Meeting Notes → Multi-System Distribution",
+    "problem": "Manually copying action items to different tools after meetings.",
+    "solution": "AI processes Notion meeting notes, extracts tasks for Todoist, updates docs, posts to Slack.",
+    "systems": ["notion", "todoist", "slack"],
+    "roles": ["founder", "consultant"],
+    "complexity": "intermediate",
+    "timeSaved": "15 min/meeting"
+  },
+  {
+    "id": 4,
+    "title": "Customer Support Auto-Draft",
+    "problem": "Repetitive support responses.",
+    "solution": "AI drafts responses in Helpscout based on Linear issue status and Notion knowledge base.",
+    "systems": ["linear", "notion"],
+    "roles": ["consultant"],
+    "complexity": "beginner",
+    "timeSaved": "5 hours/week"
+  },
+  {
+    "id": 5,
+    "title": "Automated Code Review Assistant",
+    "problem": "Reviewing PRs for style compliance takes time.",
+    "solution": "AI checks PRs against internal Notion style guide and posts comments in GitHub.",
+    "systems": ["github", "notion"],
+    "roles": ["developer"],
+    "complexity": "advanced",
+    "timeSaved": "3 hours/week"
+  }
+]
