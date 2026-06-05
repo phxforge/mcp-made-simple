@@ -1,9 +1,15 @@
-'use client';
-
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Wrench, Lightbulb, HeartHandshake } from 'lucide-react';
+import { generatePageMetadata } from '@/lib/metadata';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+    title: "About Jason Laveglia",
+    description: "Meet the founder of MCP Made Simple. Learn why he built this platform to cut SaaS automation costs and reclaim hours of time.",
+    path: "/founder",
+});
 
 export default function FounderPage() {
     return (

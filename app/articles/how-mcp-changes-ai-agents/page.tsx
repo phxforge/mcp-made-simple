@@ -161,7 +161,7 @@ export default function ArticlePage() {
                     <Link href="/articles/mcp-for-non-technical-people" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors">
                         Start Simple (No Code) <ArrowRight size={18} />
                     </Link>
-                    <Link href="/articles/how-mcp-works-technical" className="inline-flex items-center justify-center gap-2 text-white font-bold py-3 px-8 rounded-lg border border-slate-600 hover:bg-slate-800 transition-colors">
+                    <Link href="/articles/mcp-developer-quick-start" className="inline-flex items-center justify-center gap-2 text-white font-bold py-3 px-8 rounded-lg border border-slate-600 hover:bg-slate-800 transition-colors">
                         Technical Deep Dive <Workflow size={18} />
                     </Link>
                 </div>

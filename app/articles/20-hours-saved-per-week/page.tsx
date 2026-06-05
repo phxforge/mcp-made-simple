@@ -79,7 +79,7 @@ export default function ArticlePage() {
             {/* 4. WEEK 1: EMAIL TRIAGE */}
             <h2 id="week-1">Week 1: Email Triage</h2>
             <p>
-                She started small. She installed Claude Desktop and connected it to her Gmail account (using a guide like our <Link href="/articles/convert-gmail-to-tasks" className="text-blue-600 underline">Gmail Setup Guide</Link>).
+                She started small. She installed Claude Desktop and connected it to her Gmail account (using a guide like our <Link href="/tools/gmail" className="text-blue-600 underline">Gmail Setup Guide</Link>).
             </p>
             <div className="my-6">
                 <h3 className="font-bold text-lg mb-2">The Setup</h3>

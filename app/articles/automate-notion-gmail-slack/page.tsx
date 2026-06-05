@@ -99,7 +99,7 @@ export default function ArticlePage() {
                 <div className="border border-slate-200 rounded-xl p-6">
                     <h3 className="font-bold text-lg mb-4 flex items-center gap-2"><Database className="text-slate-900" /> Step 1B: Connect Notion</h3>
                     <ol className="list-decimal pl-5 space-y-2 text-sm text-slate-700">
-                        <li>Go to <a href="https://www.notion.so/my-integrations" target="_blank" className="text-blue-600 underline">notion.so/my-integrations</a> and create a new integration.</li>
+                        <li>Go to <a href="https://www.notion.so/my-integrations" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">notion.so/my-integrations</a> and create a new integration.</li>
                         <li>Copy the "Internal Integration Secret".</li>
                         <li>Paste it into your config file where it says <code>your-notion-token</code>.</li>
                         <li><strong>Crucial Step:</strong> Go to the Notion pages you want Claude to access, click "..." in the top right, select "Connect to", and choose your new integration.</li>
@@ -111,7 +111,7 @@ export default function ArticlePage() {
                 <div className="border border-slate-200 rounded-xl p-6">
                     <h3 className="font-bold text-lg mb-4 flex items-center gap-2"><Slack className="text-purple-500" /> Step 1C: Connect Slack</h3>
                     <ol className="list-decimal pl-5 space-y-2 text-sm text-slate-700">
-                        <li>Create a Slack app at <a href="https://api.slack.com/apps" target="_blank" className="text-blue-600 underline">api.slack.com/apps</a>.</li>
+                        <li>Create a Slack app at <a href="https://api.slack.com/apps" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">api.slack.com/apps</a>.</li>
                         <li>Under "OAuth & Permissions", add these Scopes: <code>channels:history</code>, <code>channels:read</code>, <code>chat:write</code>.</li>
                         <li>Install the app to your workspace and copy the "Bot User OAuth Token".</li>
                         <li>Paste it into your config file where it says <code>your-slack-bot-token</code>.</li>

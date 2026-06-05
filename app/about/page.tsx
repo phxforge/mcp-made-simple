@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2, Lightbulb, Target, Handshake, Sparkles, Zap, Lock, Sprout, RefreshCw, Heart, Mail, Mic, Github, Linkedin, Twitter, Brain, Workflow, Shield, Globe } from 'lucide-react';
 import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
+import { siteConfig } from '@/lib/siteConfig';
 
 export const metadata: Metadata = generatePageMetadata({
     title: "About Jason Laveglia | MCP Made Simple",
@@ -20,7 +21,7 @@ export default function AboutPage() {
         "name": "Jason Laveglia",
         "jobTitle": "Solo Founder & Context Engineer",
         "description": "Founder of MCP Made Simple and FightHOA. Documenting the Model Context Protocol for solo founders and teams.",
-        "url": "https://mcpmadesimple.com/about",
+        "url": `${siteConfig.siteUrl}/about`,
         "sameAs": [
             "https://linkedin.com/in/placeholder",
             "https://twitter.com/placeholder",
@@ -29,7 +30,7 @@ export default function AboutPage() {
         "worksFor": {
             "@type": "Organization",
             "name": "MCP Made Simple",
-            "url": "https://mcpmadesimple.com"
+            "url": siteConfig.siteUrl
         },
         "knowsAbout": [
             "Model Context Protocol",

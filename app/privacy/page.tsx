@@ -1,7 +1,13 @@
-'use client';
-
 import { ShieldCheck, Lock, EyeOff, Mail } from 'lucide-react';
 import Link from 'next/link';
+import { generatePageMetadata } from '@/lib/metadata';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+    title: "Privacy Policy",
+    description: "Our plain English privacy promise and full policy regarding your data. Learn why our local-first philosophy keeps your data secure.",
+    path: "/privacy",
+});
 
 export default function PrivacyPage() {
     return (

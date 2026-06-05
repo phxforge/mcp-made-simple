@@ -1,9 +1,15 @@
-'use client';
-
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { MessagesSquare, LifeBuoy, Handshake, HelpCircle } from 'lucide-react';
+import { generatePageMetadata } from '@/lib/metadata';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+    title: "Contact Support & Partnerships",
+    description: "Get in touch with the MCP Made Simple team. We prioritize support tickets and collaboration requests.",
+    path: "/contact",
+});
 
 export default function ContactPage() {
     return (

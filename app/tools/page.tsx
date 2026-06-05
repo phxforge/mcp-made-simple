@@ -411,7 +411,7 @@ export default function ToolsPage() {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                            <Link href="https://github.com/modelcontextprotocol/servers" target="_blank" className="p-6 rounded-xl bg-white border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all group">
+                            <Link href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener noreferrer" className="p-6 rounded-xl bg-white border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all group">
                                 <Database size={24} className="mx-auto text-slate-400 mb-3 group-hover:text-blue-600 transition-colors" />
                                 <h3 className="font-bold text-slate-900 mb-1">Check the Directory</h3>
                                 <p className="text-xs text-slate-500">Browse all available MCP servers</p>

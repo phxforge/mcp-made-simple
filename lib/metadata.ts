@@ -18,7 +18,8 @@ export function generatePageMetadata({
     publishedTime,
     category
 }: PageMetaProps): Metadata {
-    const fullTitle = `${title} | ${siteConfig.siteName}`;
+    const suffix = `| ${siteConfig.siteName}`;
+    const fullTitle = title.includes(siteConfig.siteName) ? title : `${title} ${suffix}`;
     const url = `${siteConfig.siteUrl}${path}`;
 
     return {

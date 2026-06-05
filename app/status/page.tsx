@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { generatePageMetadata } from '@/lib/metadata';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+    title: "System Status",
+    description: "Check the status of MCP Made Simple services. (Spoiler: We have no servers to go down)",
+    path: "/status",
+});
 
 export default function StatusPage() {
     return (

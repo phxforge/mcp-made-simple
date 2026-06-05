@@ -109,16 +109,19 @@ export default function CoursePage() {
                             <EmailCaptureForm source="course-pricing" buttonText="Join Waitlist Now" inline={false} />
 
                             {/* LOCAL DEV ONLY */}
-                            <div className="mt-4 pt-4 border-t border-gray-100 text-center">
-                                <p className="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wide">Dev: Integration Test</p>
-                                <a
-                                    href="http://local.openedx.io/courses/course-v1:MCP+MCP101+2026/about"
-                                    target="_blank"
-                                    className="block w-full py-2 bg-blue-50 border border-blue-200 text-blue-700 font-bold rounded-lg hover:bg-blue-100 text-sm"
-                                >
-                                    Access Local LMS Course →
-                                </a>
-                            </div>
+                            {process.env.NODE_ENV === 'development' && (
+                                <div className="mt-4 pt-4 border-t border-gray-100 text-center">
+                                    <p className="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wide">Dev: Integration Test</p>
+                                    <a
+                                        href="http://local.openedx.io/courses/course-v1:MCP+MCP101+2026/about"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block w-full py-2 bg-blue-50 border border-blue-200 text-blue-700 font-bold rounded-lg hover:bg-blue-100 text-sm"
+                                    >
+                                        Access Local LMS Course →
+                                    </a>
+                                </div>
+                            )}
                         </div>
 
                         {/* Enterprise */}

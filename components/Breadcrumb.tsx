@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
+import { siteConfig } from '@/lib/siteConfig';
 
 const SLUG_MAPPING: Record<string, string> = {
     // SECTIONS
@@ -105,7 +106,7 @@ export function Breadcrumb() {
             "@type": "ListItem",
             "position": index + 1,
             "name": item.name,
-            "item": `https://mcpmadesimple.com${item.href}` // Assuming domain
+            "item": `${siteConfig.siteUrl}${item.href}` // Assuming domain
         }))
     };
 

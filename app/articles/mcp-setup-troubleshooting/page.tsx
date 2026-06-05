@@ -81,7 +81,7 @@ export default function ArticlePage() {
 
                 <div className="border-l-4 border-blue-500 pl-4">
                     <h3 className="font-bold text-slate-900">Fix 3: JSON Syntax Errors</h3>
-                    <p className="text-sm text-slate-600">A single missing comma will break the entire file. Copy-paste your config into a validator like <a href="https://jsonlint.com" target="_blank" className="text-blue-600 underline">jsonlint.com</a> to check it.</p>
+                    <p className="text-sm text-slate-600">A single missing comma will break the entire file. Copy-paste your config into a validator like <a href="https://jsonlint.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">jsonlint.com</a> to check it.</p>
                 </div>
             </div>
 

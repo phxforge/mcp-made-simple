@@ -64,7 +64,7 @@ export default function ArticlePage() {
                     <div className="space-y-3 mb-6">
                         <div className="flex items-start gap-3">
                             <input type="checkbox" className="mt-1.5" />
-                            <span>Download Claude Desktop from <a href="https://claude.ai/download" target="_blank" className="text-blue-600 underline">claude.ai/download</a></span>
+                            <span>Download Claude Desktop from <a href="https://claude.ai/download" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">claude.ai/download</a></span>
                         </div>
                         <div className="flex items-start gap-3">
                             <input type="checkbox" className="mt-1.5" />

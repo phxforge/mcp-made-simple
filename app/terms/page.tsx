@@ -1,7 +1,13 @@
-'use client';
-
 import { Scale, AlertTriangle, GraduationCap, ShieldAlert } from 'lucide-react';
 import Link from 'next/link';
+import { generatePageMetadata } from '@/lib/metadata';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+    title: "Terms of Service",
+    description: "Our 'Responsible Builder' agreement and terms governing your use of our platform.",
+    path: "/terms",
+});
 
 export default function TermsPage() {
     return (

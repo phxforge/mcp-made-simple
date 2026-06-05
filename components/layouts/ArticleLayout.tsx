@@ -83,7 +83,7 @@ export function ArticleLayout({
                                 <p className="text-sm text-slate-600 mb-1">
                                     This article is part of our <span className="font-semibold text-slate-900">{category}</span> series.
                                 </p>
-                                <Link href={`/guides/${parentPillar.slug}`} className="text-blue-600 font-bold hover:underline flex items-center gap-1">
+                                <Link href={parentPillar.slug.startsWith('/') ? parentPillar.slug : `/guides/${parentPillar.slug}`} className="text-blue-600 font-bold hover:underline flex items-center gap-1">
                                     Read the complete guide: {parentPillar.title} <ArrowRight size={14} />
                                 </Link>
                             </div>

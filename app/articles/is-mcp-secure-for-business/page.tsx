@@ -186,7 +186,7 @@ export default function ArticlePage() {
                     <p className="text-slate-600 text-sm mb-4">A simpler overview for individual users and solopreneurs.</p>
                     <span className="font-bold text-sm text-blue-600 inline-flex items-center gap-1">Read Guide <ArrowRight size={14} /></span>
                 </Link>
-                <Link href="https://trust.anthropic.com" target="_blank" className="block p-6 bg-slate-50 border border-slate-200 rounded-xl shadow-sm hover:bg-slate-100 transition-colors">
+                <Link href="https://trust.anthropic.com" target="_blank" rel="noopener noreferrer" className="block p-6 bg-slate-50 border border-slate-200 rounded-xl shadow-sm hover:bg-slate-100 transition-colors">
                     <div className="font-bold text-lg mb-2 text-slate-800">Anthropic Trust Center</div>
                     <p className="text-slate-600 text-sm mb-4">View SOC2 reports, compliance certs, and data policies directly from the source.</p>
                     <span className="font-bold text-sm text-slate-600 inline-flex items-center gap-1">Visit Trust Center <ArrowRight size={14} /></span>

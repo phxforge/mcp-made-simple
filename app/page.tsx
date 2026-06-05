@@ -9,18 +9,21 @@ import { CourseTeaser } from '@/components/sections/CourseTeaser';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Metadata } from 'next';
+import { siteConfig } from '@/lib/siteConfig';
+import { generatePageMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: "MCP Made Simple | Connect AI to Your Business Data",
+export const metadata: Metadata = generatePageMetadata({
+  title: "Connect AI to Your Business Data",
   description: "Stop copy-pasting. Connect Claude to your files in 5 minutes. No coding, no servers, no complexity. Get the free toolkit with 10 pre-built workflows.",
-};
+  path: "",
+});
 
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "MCP Made Simple",
-    "url": "https://mcpmadesimple.com",
+    "url": siteConfig.siteUrl,
     "description": "Business automation guide for the Model Context Protocol",
     "author": {
       "@type": "Person",

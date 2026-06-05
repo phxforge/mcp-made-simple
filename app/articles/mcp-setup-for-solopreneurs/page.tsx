@@ -76,7 +76,7 @@ export default function ArticlePage() {
                 <div>
                     <h3 className="font-bold text-lg mb-2">For Mac Users</h3>
                     <ol className="list-decimal pl-5 space-y-2 text-slate-700">
-                        <li>Go to <a href="https://claude.ai/download" target="_blank" className="text-blue-600 hover:underline">claude.ai/download</a></li>
+                        <li>Go to <a href="https://claude.ai/download" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">claude.ai/download</a></li>
                         <li>Click "Download for Mac"</li>
                         <li>Open the downloaded file</li>
                         <li>Drag Claude to your Applications folder</li>
@@ -87,7 +87,7 @@ export default function ArticlePage() {
                 <div>
                     <h3 className="font-bold text-lg mb-2">For Windows Users</h3>
                     <ol className="list-decimal pl-5 space-y-2 text-slate-700">
-                        <li>Go to <a href="https://claude.ai/download" target="_blank" className="text-blue-600 hover:underline">claude.ai/download</a></li>
+                        <li>Go to <a href="https://claude.ai/download" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">claude.ai/download</a></li>
                         <li>Click "Download for Windows"</li>
                         <li>Run the installer</li>
                         <li>Follow the prompts (default settings are fine)</li>
@@ -212,7 +212,7 @@ export default function ArticlePage() {
                         <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="px-4 pb-4 prose prose-sm">
-                        <p>Ah, this means your computer doesn't have Node.js installed. Creating the 'filesystem' server uses <code>npx</code>, which requires Node. You can download and install the "LTS" version of Node.js from <a href="https://nodejs.org" target="_blank" className="text-blue-600 underline">nodejs.org</a>, then restart Claude.</p>
+                        <p>Ah, this means your computer doesn't have Node.js installed. Creating the 'filesystem' server uses <code>npx</code>, which requires Node. You can download and install the "LTS" version of Node.js from <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">nodejs.org</a>, then restart Claude.</p>
                     </div>
                 </details>
             </div>

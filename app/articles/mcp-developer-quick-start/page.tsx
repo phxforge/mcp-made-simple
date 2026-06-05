@@ -143,14 +143,14 @@ export default function ArticlePage() {
                 Ready to go deeper?
             </p>
             <div className="grid md:grid-cols-2 gap-4 my-6">
-                <a href="https://modelcontextprotocol.io/docs" target="_blank" className="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors group">
+                <a href="https://modelcontextprotocol.io/docs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors group">
                     <div className="bg-slate-100 p-2 rounded group-hover:bg-white text-slate-600"><Settings size={20} /></div>
                     <div>
                         <strong className="block text-slate-900 flex items-center gap-1">Official Docs <ExternalLink size={12} /></strong>
                         <span className="text-xs text-slate-500">Full API reference</span>
                     </div>
                 </a>
-                <a href="https://github.com/modelcontextprotocol/servers" target="_blank" className="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors group">
+                <a href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors group">
                     <div className="bg-slate-100 p-2 rounded group-hover:bg-white text-slate-600"><Code2 size={20} /></div>
                     <div>
                         <strong className="block text-slate-900 flex items-center gap-1">Example Servers <ExternalLink size={12} /></strong>
@@ -166,7 +166,7 @@ export default function ArticlePage() {
                     We are just scratching the surface of what's possible. Join the community and build the next great integration.
                 </p>
                 <div className="flex justify-center gap-4">
-                    <Link href="https://github.com/modelcontextprotocol/servers" target="_blank" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors">
+                    <Link href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors">
                         View GitHub Repo <Code2 size={18} />
                     </Link>
                 </div>

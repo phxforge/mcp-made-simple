@@ -2,6 +2,8 @@ import { HubLayout } from '@/components/layouts/HubLayout';
 import { ArticleCard } from '@/components/ArticleCard';
 import { ARTICLES, getArticlesByCategory } from '@/lib/articles';
 import Link from 'next/link';
+import { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/metadata';
 
 // Helper for category counts
 const getCategoryCount = (category?: string) => {
@@ -19,11 +21,30 @@ const FILTER_TABS = [
 ];
 
 interface ArticlesPageProps {
-    searchParams: { category?: string };
+    searchParams: Promise<{ category?: string }>;
 }
 
-export default function ArticlesPage({ searchParams }: ArticlesPageProps) {
-    const currentCategory = searchParams.category;
+export async function generateMetadata({ searchParams }: ArticlesPageProps): Promise<Metadata> {
+    const resolvedParams = await searchParams;
+    const category = resolvedParams.category;
+    
+    const title = category 
+        ? `${category} Articles & Insights` 
+        : "Articles & Insights";
+    const description = category 
+        ? `Browse our list of ${category} articles and insights about Model Context Protocol.`
+        : "Deep dives, tutorials, and analysis on the future of AI integration.";
+        
+    return generatePageMetadata({
+        title,
+        description,
+        path: "/articles", // Keep canonical pointing to main articles to prevent duplicate indexing
+    });
+}
+
+export default async function ArticlesPage({ searchParams }: ArticlesPageProps) {
+    const resolvedParams = await searchParams;
+    const currentCategory = resolvedParams.category;
 
     // Filter logic
     const displayedArticles = currentCategory

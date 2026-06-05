@@ -10,6 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "MCP Made Simple",
   description: "The complete guide to Model Context Protocol for AI automation.",
+  metadataBase: new URL('https://www.mcpmadesimple.com'),
 };
 
 export default function RootLayout({
