@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, TrendingUp, Calendar, FileText, Mail, BarChart } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "20 Hours Saved Per Week: A Solopreneur Case Study | MCP Made Simple",
+    title: "20 Hours Saved Per Week Case Study",
     description: "How a freelance consultant automated 15 hours of admin work using MCP. A week-by-week breakdown.",
     path: "/articles/20-hours-saved-per-week",
     type: "article"

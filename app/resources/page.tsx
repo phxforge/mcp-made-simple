@@ -8,7 +8,7 @@ import { FileText, Calculator, CheckCircle2, Zap, User, Users, Terminal, ArrowRi
 import { CTASection } from '@/components/CTASection';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Free MCP Resources: Templates, Tools & Downloads | MCP Made Simple",
+    title: "Free MCP Templates & Resources",
     description: "Free MCP resources including cheat sheet, ROI calculator, tool compatibility checker, and workflow templates. Everything you need to get started.",
     path: "/resources",
     type: "website"

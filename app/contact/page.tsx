@@ -4,19 +4,25 @@ import { Badge } from '@/components/ui/badge';
 import { MessagesSquare, LifeBuoy, Handshake, HelpCircle } from 'lucide-react';
 import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
+import { StandardLayout } from '@/components/layouts/StandardLayout';
 
-export const metadata: Metadata = generatePageMetadata({
-    title: "Contact Support & Partnerships",
-    description: "Get in touch with the MCP Made Simple team. We prioritize support tickets and collaboration requests.",
-    path: "/contact",
-});
+export const metadata: Metadata = {
+    ...generatePageMetadata({
+        title: "Contact Support & Partnerships",
+        description: "Get in touch with the MCP Made Simple team. We prioritize support tickets and collaboration requests.",
+        path: "/contact",
+    }),
+    robots: {
+        index: false,
+        follow: true,
+    },
+};
 
 export default function ContactPage() {
     return (
-        <div className="min-h-screen bg-white font-sans text-slate-900 pb-24">
-
+        <StandardLayout>
             {/* HERO */}
-            <header className="pt-32 pb-20 px-6 max-w-4xl mx-auto text-center">
+            <header className="pb-20 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 text-slate-900">
                     How can we help?
                 </h1>
@@ -56,7 +62,7 @@ export default function ContactPage() {
                         <p className="text-slate-600 mb-8 flex-1">
                             Need a refund? Login trouble? Course access issues? We prioritize these tickets above everything else.
                         </p>
-                        <a href="mailto:support@mcpmadesimple.com" className="block w-full">
+                        <a href="mailto:jason@mcpmadesimple.com" className="block w-full">
                             <Button variant="outline" className="w-full border-2 border-slate-200 hover:border-slate-900 hover:bg-slate-50 text-slate-900 font-bold py-3 rounded-xl">
                                 Email Support
                             </Button>
@@ -106,6 +112,6 @@ export default function ContactPage() {
                 </section>
 
             </main>
-        </div>
+        </StandardLayout>
     );
 }

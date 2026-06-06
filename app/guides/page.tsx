@@ -9,7 +9,7 @@ import { Metadata } from 'next';
 import { CTASection } from '@/components/CTASection';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Guides: Master AI Automation Step by Step | MCP Made Simple",
+    title: "MCP Guides: Master AI Automation",
     description: "Complete MCP guide library. Learn fundamentals, evaluate security, set up your tools, and build automation workflows. Four pillars, one clear path.",
     path: "/guides",
     type: "website"

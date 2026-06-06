@@ -18,6 +18,8 @@ const DEFAULT_RELATED: RelatedItem[] = [
     { title: "Workflow Examples", description: "Real automation workflows you can build today.", link: "/guides/workflows", readTime: "10 min", category: "Workflows" }
 ];
 
+import { PageSchema } from '@/components/PageSchema';
+
 export function StandardLayout({ children, title, description }: StandardLayoutProps) {
     return (
         <div className="min-h-screen flex flex-col bg-white">
@@ -25,8 +27,13 @@ export function StandardLayout({ children, title, description }: StandardLayoutP
 
             <main className="flex-1 w-full pt-24 pb-16">
                 <div className="max-w-7xl mx-auto px-6">
+                    <PageSchema
+                        title={title || ''}
+                        description={description || ''}
+                    />
+
                     {/* Breadcrumb */}
-                    <Breadcrumb />
+                    <Breadcrumb hideSchema={true} />
 
                     {/* Header Area */}
                     {(title || description) && (

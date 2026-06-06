@@ -2,6 +2,7 @@ import { Scale, AlertTriangle, GraduationCap, ShieldAlert } from 'lucide-react';
 import Link from 'next/link';
 import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
+import { StandardLayout } from '@/components/layouts/StandardLayout';
 
 export const metadata: Metadata = generatePageMetadata({
     title: "Terms of Service",
@@ -11,10 +12,9 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function TermsPage() {
     return (
-        <div className="min-h-screen bg-white font-sans text-slate-900 pb-24">
-
+        <StandardLayout>
             {/* HERO */}
-            <header className="pt-32 pb-12 px-6 max-w-4xl mx-auto text-center">
+            <header className="pb-12 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 text-slate-900">
                     Terms of Service
                 </h1>
@@ -195,11 +195,11 @@ export default function TermsPage() {
                             <div className="space-y-2">
                                 <div className="flex gap-2">
                                     <span className="font-bold text-slate-900 min-w-[80px]">Email:</span>
-                                    <a href="mailto:legal@mcpmadesimple.com" className="text-blue-600 hover:underline">legal@mcpmadesimple.com</a>
+                                    <a href="mailto:jason@mcpmadesimple.com" className="text-blue-600 hover:underline">jason@mcpmadesimple.com</a>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="font-bold text-slate-900 min-w-[80px]">Support:</span>
-                                    <a href="mailto:support@mcpmadesimple.com" className="text-blue-600 hover:underline">support@mcpmadesimple.com</a>
+                                    <a href="mailto:jason@mcpmadesimple.com" className="text-blue-600 hover:underline">jason@mcpmadesimple.com</a>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="font-bold text-slate-900 min-w-[80px]">Address:</span>
@@ -212,6 +212,6 @@ export default function TermsPage() {
                 </div>
 
             </main>
-        </div>
+        </StandardLayout>
     );
 }

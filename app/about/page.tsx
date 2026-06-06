@@ -15,47 +15,17 @@ export const metadata: Metadata = generatePageMetadata({
 });
 
 export default function AboutPage() {
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Jason Laveglia",
-        "jobTitle": "Solo Founder & Context Engineer",
-        "description": "Founder of MCP Made Simple and FightHOA. Documenting the Model Context Protocol for solo founders and teams.",
-        "url": `${siteConfig.siteUrl}/about`,
-        "sameAs": [
-            "https://linkedin.com/in/placeholder",
-            "https://twitter.com/placeholder",
-            "https://github.com/placeholder"
-        ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "MCP Made Simple",
-            "url": siteConfig.siteUrl
-        },
-        "knowsAbout": [
-            "Model Context Protocol",
-            "Context Engineering",
-            "AI Automation",
-            "LegalTech",
-            "Solo Founder Operations"
-        ]
-    };
-
     return (
         <StandardLayout>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
-
             {/* 1. HERO SECTION */}
             <section className="relative overflow-hidden rounded-3xl bg-slate-900 text-white py-20 px-8 md:px-16 text-center mb-16">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/about/hero-background.png"
                         alt="Abstract gradient background"
-                        fill
-                        className="object-cover opacity-40"
+                        width={1920}
+                        height={1080}
+                        className="w-full h-full object-cover opacity-40"
                         priority
                     />
                 </div>
@@ -90,8 +60,9 @@ export default function AboutPage() {
                     <Image
                         src="/images/about/jason-action-2.jpg"
                         alt="Jason Laveglia working on FightHOA"
-                        fill
-                        className="object-cover"
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
                     />
                 </div>
                 <div>
@@ -173,8 +144,9 @@ export default function AboutPage() {
                     <Image
                         src="/images/about/jason-action-1.jpg"
                         alt="Jason Laveglia using mobile workflow"
-                        fill
-                        className="object-cover"
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
                     />
                 </div>
             </section>
@@ -185,8 +157,9 @@ export default function AboutPage() {
                     <Image
                         src="/images/about/jason-whiteboard.jpg"
                         alt="Jason Laveglia explaining MCP transformation on whiteboard"
-                        fill
-                        className="object-cover"
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
                     />
                 </div>
                 <div>
@@ -312,8 +285,9 @@ export default function AboutPage() {
                         <Image
                             src="/images/about/jason-headshot.jpg"
                             alt="Jason Laveglia - Founder of MCP Made Simple"
-                            fill
-                            className="object-cover"
+                            width={256}
+                            height={256}
+                            className="w-full h-full object-cover"
                         />
                     </div>
                     <div className="text-center md:text-left flex-1">
@@ -344,9 +318,9 @@ export default function AboutPage() {
                         </div>
 
                         <div className="flex gap-4 justify-center md:justify-start text-slate-400">
-                            <a href="#" className="hover:text-blue-500 transition-colors"><Twitter size={20} /></a>
-                            <a href="#" className="hover:text-blue-700 transition-colors"><Linkedin size={20} /></a>
-                            <a href="#" className="hover:text-slate-900 transition-colors"><Github size={20} /></a>
+                            <a href="#" aria-label="Twitter" className="hover:text-blue-500 transition-colors"><Twitter size={20} /></a>
+                            <a href="#" aria-label="LinkedIn" className="hover:text-blue-700 transition-colors"><Linkedin size={20} /></a>
+                            <a href="#" aria-label="GitHub" className="hover:text-slate-900 transition-colors"><Github size={20} /></a>
                         </div>
                     </div>
                 </div>
@@ -363,7 +337,7 @@ export default function AboutPage() {
                                 <Handshake size={18} className="text-slate-400" /> Collaboration
                             </div>
                             <p className="text-sm text-slate-600 mb-3">Building something with MCP? I'm always interested in practitioner stories.</p>
-                            <a href="mailto:hello@mcpmadesimple.com" className="text-blue-600 hover:underline text-sm font-medium">hello@mcpmadesimple.com</a>
+                            <a href="mailto:jason@mcpmadesimple.com" className="text-blue-600 hover:underline text-sm font-medium">jason@mcpmadesimple.com</a>
                         </div>
 
                         <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
@@ -371,7 +345,7 @@ export default function AboutPage() {
                                 <Mic size={18} className="text-slate-400" /> Speaking & Podcasts
                             </div>
                             <p className="text-sm text-slate-600 mb-3">Happy to discuss Context Engineering, solo founder leverage, or MCP architecture.</p>
-                            <a href="mailto:hello@mcpmadesimple.com" className="text-blue-600 hover:underline text-sm font-medium">hello@mcpmadesimple.com</a>
+                            <a href="mailto:jason@mcpmadesimple.com" className="text-blue-600 hover:underline text-sm font-medium">jason@mcpmadesimple.com</a>
                         </div>
                     </div>
                 </div>

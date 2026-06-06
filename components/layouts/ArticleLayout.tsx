@@ -28,6 +28,8 @@ const DEFAULT_RELATED: RelatedItem[] = [
     { title: "Is MCP Secure?", description: "Addressing common concerns for enterprise teams.", link: "/articles/is-mcp-secure-for-business", readTime: "7 min", category: "Security" }
 ];
 
+import { PageSchema } from '@/components/PageSchema';
+
 // Helper to title case slugs
 const formatSlug = (slug: string) => {
     return slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
@@ -51,9 +53,14 @@ export function ArticleLayout({
 
             <main className="flex-1 w-full pt-28 pb-24">
                 <article className="max-w-3xl mx-auto px-6">
+                    <PageSchema
+                        title={title}
+                        description={description}
+                        datePublished={publishDate}
+                    />
 
                     {/* Breadcrumb */}
-                    <Breadcrumb />
+                    <Breadcrumb hideSchema={true} />
 
                     {/* Article Header */}
                     <header className="mb-10">

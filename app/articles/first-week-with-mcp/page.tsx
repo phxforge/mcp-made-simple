@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Calendar, Play, FileJson, Search, Filter, Lightbulb, PartyPopper, Mail } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "First Week with MCP: A Day-by-Day Learning Plan | MCP Made Simple",
+    title: "First Week with MCP Learning Plan",
     description: "Day-by-day learning plan for your first week with MCP. Small daily wins that build into real productivity gains.",
     path: "/articles/first-week-with-mcp",
     type: "article"
@@ -104,7 +104,7 @@ export default function ArticlePage() {
                         </div>
                         <div className="flex items-start gap-3">
                             <input type="checkbox" className="mt-1.5" />
-                            <span>Add the Google Drive configuration from <Link href="/tools/google-drive" className="text-blue-600 underline">here</Link></span>
+                            <span>Add the Google Drive configuration from the <Link href="/tools/google-drive" className="text-blue-600 underline">Google Drive integration guide</Link></span>
                         </div>
                         <div className="flex items-start gap-3">
                             <input type="checkbox" className="mt-1.5" />

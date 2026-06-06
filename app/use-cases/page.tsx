@@ -9,7 +9,7 @@ import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Use Cases: Solopreneurs, Teams & Developers | MCP Made Simple",
+    title: "MCP Use Cases & Solutions",
     description: "Find MCP resources for your role. Tailored guides and workflows for solopreneurs, teams, and developers. Start with your path.",
     path: "/use-cases",
     type: "website"

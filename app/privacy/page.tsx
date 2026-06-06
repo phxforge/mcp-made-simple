@@ -2,6 +2,7 @@ import { ShieldCheck, Lock, EyeOff, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
+import { StandardLayout } from '@/components/layouts/StandardLayout';
 
 export const metadata: Metadata = generatePageMetadata({
     title: "Privacy Policy",
@@ -11,10 +12,9 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function PrivacyPage() {
     return (
-        <div className="min-h-screen bg-white font-sans text-slate-900 pb-24">
-
+        <StandardLayout>
             {/* HERO */}
-            <header className="pt-32 pb-12 px-6 max-w-4xl mx-auto text-center">
+            <header className="pb-12 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 text-slate-900">
                     Privacy Policy
                 </h1>
@@ -147,7 +147,7 @@ export default function PrivacyPage() {
                             Depending on your location, you may have rights regarding your personal information, including the right to access, correct, delete, or restrict use of your data.
                         </p>
                         <p>
-                            To exercise these rights, contact us at <a href="mailto:privacy@mcpmadesimple.com" className="text-blue-600 font-bold hover:underline">privacy@mcpmadesimple.com</a>.
+                            To exercise these rights, contact us at <a href="mailto:jason@mcpmadesimple.com" className="text-blue-600 font-bold hover:underline">jason@mcpmadesimple.com</a>.
                         </p>
                     </section>
 
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
                             <div className="space-y-2 mb-6">
                                 <div className="flex gap-2">
                                     <span className="font-bold text-slate-900 min-w-[80px]">Email:</span>
-                                    <a href="mailto:privacy@mcpmadesimple.com" className="text-blue-600 hover:underline">privacy@mcpmadesimple.com</a>
+                                    <a href="mailto:jason@mcpmadesimple.com" className="text-blue-600 hover:underline">jason@mcpmadesimple.com</a>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="font-bold text-slate-900 min-w-[80px]">Address:</span>
@@ -175,7 +175,7 @@ export default function PrivacyPage() {
                                 </div>
                             </div>
                             <p className="text-sm text-slate-500 pt-4 border-t border-slate-200">
-                                For GDPR-related inquiries, contact our Data Protection Officer at <a href="mailto:support@mcpmadesimple.com" className="text-slate-700 underline hover:text-blue-600">support@mcpmadesimple.com</a>.
+                                For GDPR-related inquiries, contact our Data Protection Officer at <a href="mailto:jason@mcpmadesimple.com" className="text-slate-700 underline hover:text-blue-600">jason@mcpmadesimple.com</a>.
                             </p>
                         </div>
                     </section>
@@ -183,6 +183,6 @@ export default function PrivacyPage() {
                 </div>
 
             </main>
-        </div>
+        </StandardLayout>
     );
 }

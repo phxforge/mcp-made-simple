@@ -13,10 +13,11 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout>
+    <StandardLayout
+      title="MCP Setup Guide: Get Started in 15 Minutes"
+      description="Step-by-step instructions to connect Claude to your tools. No coding required for most setups."
+    >
       <div className="prose prose-lg prose-slate max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight not-prose">MCP Setup Guide: Get Started in 15 Minutes</h1>
-        <p className="text-xl text-slate-600 mb-12 leading-relaxed not-prose">Step-by-step instructions to connect Claude to your tools. No coding required for most setups.</p>
 
         <p className="lead text-xl text-slate-600 mb-8">
           You've decided to try MCP—great choice. This guide walks you through setup from zero to your first working automation. Most people complete their first connection in 15-30 minutes.

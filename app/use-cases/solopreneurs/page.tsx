@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Target, TrendingUp, Zap, Briefcase, Mail, Calendar, Search, DollarSign, FileText } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP for Solopreneurs: Automate Your One-Person Business | MCP Made Simple",
+  title: "MCP for Solopreneurs: Automate Business",
   description: "How solopreneurs use MCP to save 15-20 hours per week. Automate email, documents, and tasks with AI. No coding required.",
   path: "/use-cases/solopreneurs",
   type: "article"

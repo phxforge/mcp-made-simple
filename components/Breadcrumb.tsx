@@ -73,7 +73,7 @@ const SLUG_MAPPING: Record<string, string> = {
     'is-mcp-becoming-the-standard': "Is MCP Becoming the Standard?"
 };
 
-export function Breadcrumb() {
+export function Breadcrumb({ hideSchema = false }: { hideSchema?: boolean }) {
     const pathname = usePathname();
 
     // Split path into segments, remove empty strings
@@ -114,10 +114,12 @@ export function Breadcrumb() {
 
     return (
         <nav aria-label="Breadcrumb" className="mb-6">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-            />
+            {!hideSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                />
+            )}
 
             <ol className="flex items-center flex-wrap gap-2 text-sm text-slate-500">
                 {allItems.map((item, index) => (

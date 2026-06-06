@@ -94,10 +94,10 @@ export function Footer() {
 
                     {/* Socials moved to bottom left */}
                     <div className="flex gap-4">
-                        <a href="#" className="text-slate-500 hover:text-white transition-colors"><Twitter size={20} /></a>
-                        <a href="#" className="text-slate-500 hover:text-white transition-colors"><Github size={20} /></a>
-                        <a href="#" className="text-slate-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
-                        <a href="mailto:hello@mcpmadesimple.com" className="text-slate-500 hover:text-white transition-colors"><Mail size={20} /></a>
+                        <a href="#" aria-label="Twitter" className="text-slate-500 hover:text-white transition-colors"><Twitter size={20} /></a>
+                        <a href="#" aria-label="GitHub" className="text-slate-500 hover:text-white transition-colors"><Github size={20} /></a>
+                        <a href="#" aria-label="LinkedIn" className="text-slate-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
+                        <a href="mailto:jason@mcpmadesimple.com" aria-label="Email" className="text-slate-500 hover:text-white transition-colors"><Mail size={20} /></a>
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center gap-4 text-xs text-slate-500">

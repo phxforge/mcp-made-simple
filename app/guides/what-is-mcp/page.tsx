@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Lock, Zap, Server, Terminal } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "What is MCP? The Complete Guide to Model Context Protocol",
+  title: "What is MCP? The Complete Guide",
   description: "Learn what MCP (Model Context Protocol) is, how it works, and why it's changing AI automation. Complete beginner's guide with examples.",
   path: "/guides/what-is-mcp",
   type: "website"

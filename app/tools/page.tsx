@@ -10,7 +10,7 @@ import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Tool Integrations: Gmail, Slack, Notion & More | MCP Made Simple",
+    title: "MCP Tool Integrations & Servers",
     description: "Connect Claude to your favorite tools. Step-by-step guides for Gmail, Google Drive, Slack, Notion, GitHub, and more MCP integrations.",
     path: "/tools",
     type: "website"

@@ -4,6 +4,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle, Check, Star, Users, Clock, Shield, PlayCircle, FileText, Settings, HelpCircle, ArrowRight, Zap, Database, MessageSquare } from 'lucide-react';
 
+import { PageSchema } from '@/components/PageSchema';
+
 export const metadata: Metadata = generatePageMetadata({
     title: "MCP Mastery: Complete Training Course | MCP Made Simple",
     description: "Master MCP in 30 days. Hands-on training, 50+ workflows, expert support. Save 15-20 hours per week with AI automation.",
@@ -14,6 +16,10 @@ export const metadata: Metadata = generatePageMetadata({
 export default function MasteryPage() {
     return (
         <ConversionLayout>
+            <PageSchema
+                title="MCP Mastery"
+                description="Master MCP in 30 days. Hands-on training, 50+ workflows, expert support. Save 15-20 hours per week with AI automation."
+            />
             {/* 1. HERO SECTION */}
             <section className="text-center mb-16 px-4">
                 <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-6">
@@ -298,7 +304,7 @@ export default function MasteryPage() {
                 </div>
 
                 <div className="text-center mt-6">
-                    <Link href="mailto:team@mcpmadesimple.com" className="text-slate-500 text-sm hover:underline">Looking for team pricing (5+ seats)? Contact us.</Link>
+                    <Link href="mailto:jason@mcpmadesimple.com" className="text-slate-500 text-sm hover:underline">Looking for team pricing (5+ seats)? Contact us.</Link>
                 </div>
             </section>
 

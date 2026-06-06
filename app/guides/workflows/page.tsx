@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, Clock, Zap, MessageSquare, Briefcase, FileText, Code, CheckCircle, Search, Mail, Calendar } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP Workflow Examples: 25+ Automations You Can Build Today",
+  title: "MCP Workflow Examples & Automations",
   description: "Real MCP workflow examples to automate email, calendar, documents, and more. Copy these automations to save 10-20 hours per week.",
   path: "/guides/workflows",
   type: "website"
@@ -13,10 +13,11 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout>
+    <StandardLayout
+      title="MCP Workflow Examples: Real Automations You Can Build Today"
+      description="Copy these workflows to save 10-20 hours per week. From simple email triage to complex multi-tool automations."
+    >
       <div className="prose prose-lg prose-slate max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight not-prose">MCP Workflow Examples: Real Automations You Can Build Today</h1>
-        <p className="text-xl text-slate-600 mb-12 leading-relaxed not-prose">Copy these workflows to save 10-20 hours per week. From simple email triage to complex multi-tool automations.</p>
 
         <p className="lead text-xl text-slate-600 mb-8">
           MCP becomes powerful when you combine tools into workflows. Instead of asking Claude one question at a time, you can create automations that handle entire processes. This guide showcases real workflows you can copy, adapt, and use immediately.

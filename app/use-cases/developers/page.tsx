@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, Code, Terminal, GitBranch, Database, Shield, Cpu, Layers, Workflow, Server } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP for Developers: Build AI Integrations Faster | MCP Made Simple",
+  title: "MCP for Developers: Build AI Faster",
   description: "How developers use MCP to build AI-powered tools and automate workflows. Skip the boilerplate and ship features that matter.",
   path: "/use-cases/developers",
   type: "article"

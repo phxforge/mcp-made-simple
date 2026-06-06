@@ -129,7 +129,7 @@ export default function CoursePage() {
                             <h3 className="text-xl font-bold text-gray-900">Enterprise</h3>
                             <div className="my-4 text-4xl font-bold text-gray-900">$697</div>
                             <p className="text-sm text-gray-500 mb-8">Team seats + coaching</p>
-                            <a href="mailto:sales@mcpmadesimple.com" className="block w-full text-center py-3 bg-white border border-gray-300 text-gray-700 font-bold rounded-lg hover:bg-gray-50">
+                            <a href="mailto:jason@mcpmadesimple.com" className="block w-full text-center py-3 bg-white border border-gray-300 text-gray-700 font-bold rounded-lg hover:bg-gray-50">
                                 Contact Us
                             </a>
                         </div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Brain, Workflow, GitCompare, Zap, Layers, Play, DollarSign, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP vs Make (Integromat): Which Do You Need? | MCP Made Simple",
+    title: "MCP vs Make: Which Do You Need?",
     description: "MCP vs Make comparison. When to use AI integration vs visual automation, and why you might want both.",
     path: "/articles/mcp-vs-make",
     type: "article"

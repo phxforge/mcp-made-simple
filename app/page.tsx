@@ -19,24 +19,8 @@ export const metadata: Metadata = generatePageMetadata({
 });
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "MCP Made Simple",
-    "url": siteConfig.siteUrl,
-    "description": "Business automation guide for the Model Context Protocol",
-    "author": {
-      "@type": "Person",
-      "name": "Jason Laveglia"
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <Navbar />
       <main className="flex-1 w-full">
         <Hero />
