@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="MCP Made Simple">
-  <rect width="64" height="64" rx="14" fill="#4F46E5"/>
-  <path d="M18 46 L18 20 L32 38 L46 20 L46 46" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-label="MCP Made Simple" role="img" viewBox="0 0 64 64"><rect width="64" height="64" fill="#4F46E5" rx="14"/><path fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M18 46 L18 20 L32 38 L46 20 L46 46"/></svg>
