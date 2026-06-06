@@ -36,7 +36,7 @@ export function generatePageMetadata({
             type: type,
             images: [
                 {
-                    url: siteConfig.defaultOgImage,
+                    url: "https://www.mcpmadesimple.com/og-image.png",
                     width: 1200,
                     height: 630,
                     alt: title,
@@ -51,7 +51,11 @@ export function generatePageMetadata({
             card: 'summary_large_image',
             title: fullTitle,
             description: description,
-            images: [siteConfig.defaultOgImage],
+            images: [{
+                url: "https://www.mcpmadesimple.com/og-image.png",
+                width: 1200,
+                height: 630,
+            }],
             creator: siteConfig.twitterHandle,
         },
     };

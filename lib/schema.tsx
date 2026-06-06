@@ -47,9 +47,9 @@ export function organizationSchema() {
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
-      url: `${SITE_URL}/images/logo.png`, // TODO: confirm this path actually resolves
-      width: 200, // TODO: set real logo dimensions
-      height: 60,
+      url: `${SITE_URL}/logo-mark.png`,
+      width: 512,
+      height: 512,
     },
     // TODO: uncomment only when a real support inbox exists
     // contactPoint: {
