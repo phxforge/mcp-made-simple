@@ -4,7 +4,7 @@ import { X, Check } from 'lucide-react';
 
 export function ProblemSolution() {
     return (
-        <section className="py-24 bg-gray-50">
+        <section className="pt-16 pb-20 bg-gray-50">
             <div className="max-w-[1280px] mx-auto px-6 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
 
