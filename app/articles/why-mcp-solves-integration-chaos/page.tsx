@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Network, Split, Share2, Database, Layers, Globe, Zap, Puzzle, RefreshCcw, Unplug } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Why MCP Solves Integration Chaos | MCP Made Simple",
+    modifiedTime: "2026-02-02T03:27:33Z",
+title: "Why MCP Solves Integration Chaos | MCP Made Simple",
     description: "How MCP brings order to the chaos of AI-tool integration. The standardization story.",
     path: "/articles/why-mcp-solves-integration-chaos",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T03:27:33Z"
             title="Why MCP Solves Integration Chaos"
             description="How MCP brings order to the chaos of AI-tool integration. The standardization story."
             category="Comparison"

@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Brain, Workflow, GitCompare, Zap, Layers, Play, DollarSign, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP vs Make: Which Do You Need?",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCP vs Make: Which Do You Need?",
     description: "MCP vs Make comparison. When to use AI integration vs visual automation, and why you might want both.",
     path: "/articles/mcp-vs-make",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
             title="MCP vs Make (Integromat): Which Do You Need?"
         >
             {/* 1. OPENING */}

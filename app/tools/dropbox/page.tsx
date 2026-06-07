@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, FileText, FolderOpen, RefreshCw, Shield, Download, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Dropbox | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:46:19Z",
+title: "Connect Claude to Dropbox | MCP Made Simple",
   description: "Dropbox MCP integration guide. Search, read, and organize your cloud files with Claude AI. Setup instructions and file management workflows.",
   path: "/tools/dropbox",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:46:19Z"
       title="Connect Claude to Dropbox"
       description="Search, read, and organize your Dropbox files with AI assistance."
     >

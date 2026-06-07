@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, TrendingUp, DollarSign, Clock, BarChart3, PieChart, Calculator, CheckCircle, Users } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Calculating the ROI of MCP for Business | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Calculating the ROI of MCP for Business | MCP Made Simple",
     description: "A data-driven framework to calculate the return on investment for adopting Model Context Protocol. Cost vs Benefit analysis.",
     path: "/articles/mcp-roi-for-business",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Calculating the ROI of MCP for Business"
         >
             {/* 1. OPENING */}

@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { Bot, Zap, Brain, Boxes, ArrowRight, MousePointer2, Database, Network, Workflow } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "How MCP Changes AI Agents | MCP Made Simple",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-05T14:38:48-07:00",
+title: "How MCP Changes AI Agents | MCP Made Simple",
     description: "The evolution from chatbots to AI agents. How MCP enables truly capable AI assistants.",
     path: "/articles/how-mcp-changes-ai-agents",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-05T14:38:48-07:00"
             title="How MCP Changes AI Agents"
             description="The evolution from chatbots to AI agents. How MCP enables truly capable AI assistants."
             category="Comparison"

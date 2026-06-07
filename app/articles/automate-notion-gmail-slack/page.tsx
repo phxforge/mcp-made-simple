@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Search, Mail, Slack, Coffee, FileText, Database, MessageSquare } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Automate Notion, Gmail & Slack with MCP | MCP Made Simple",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-05T14:38:48-07:00",
+title: "Automate Notion, Gmail & Slack with MCP | MCP Made Simple",
     description: "Step-by-step tutorial for a 3-tool workflow. Connect Gmail, Notion, and Slack to Claude to save 5-10 hours per week.",
     path: "/articles/automate-notion-gmail-slack",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-05T14:38:48-07:00"
             title="Automate Notion, Gmail & Slack with MCP"
         >
             {/* 1. OPENING */}

@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, Calendar, Plus, Clock, BarChart2, Shield, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Google Calendar | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:43:43Z",
+title: "Connect Claude to Google Calendar | MCP Made Simple",
   description: "Google Calendar MCP integration guide. Check schedules, create events, and automate calendar management with Claude AI. Setup instructions included.",
   path: "/tools/google-calendar",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:43:43Z"
       title="Connect Claude to Google Calendar"
       description="Check your schedule, create events, and automate calendar management with AI."
     >

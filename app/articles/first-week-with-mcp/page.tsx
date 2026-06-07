@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Calendar, Play, FileJson, Search, Filter, Lightbulb, PartyPopper, Mail } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "First Week with MCP Learning Plan",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "First Week with MCP Learning Plan",
     description: "Day-by-day learning plan for your first week with MCP. Small daily wins that build into real productivity gains.",
     path: "/articles/first-week-with-mcp",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
             title="First Week with MCP: A Day-by-Day Learning Plan"
         >
             {/* 1. OPENING */}

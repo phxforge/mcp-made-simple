@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, BarChart3, FileText, AlertTriangle, Users, Calendar, Copy, Receipt, Search } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Operations Team Workflows with MCP | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Operations Team Workflows with MCP | MCP Made Simple",
     description: "Automate status reports, cross-department updates, and team coordination. Cut everyday ops drudgery.",
     path: "/articles/operations-team-workflows",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Operations Team Workflows with MCP"
         >
             {/* 1. OPENING */}

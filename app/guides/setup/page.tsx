@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { Download, Terminal, Settings, Play, CheckCircle, AlertCircle, ArrowRight, Laptop, Monitor, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP Setup Guide: Get Started in 15 Minutes",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCP Setup Guide: Get Started in 15 Minutes",
   description: "Step-by-step MCP setup guide for beginners. Connect Claude to Google Drive, Notion, Slack and more. No coding required.",
   path: "/guides/setup",
   type: "website"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
       title="MCP Setup Guide: Get Started in 15 Minutes"
       description="Step-by-step instructions to connect Claude to your tools. No coding required for most setups."
     >

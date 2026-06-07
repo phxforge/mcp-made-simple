@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { LayoutGrid, Server, Monitor, Database, Github, Box, Settings, Cpu, HardDrive, Terminal } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Tools & Platforms Comparison | MCP Made Simple",
+    modifiedTime: "2026-02-02T03:24:33Z",
+title: "MCP Tools & Platforms Comparison | MCP Made Simple",
     description: "Comparing MCP server options, clients, and platforms. What to use for different needs.",
     path: "/articles/mcp-tools-and-platforms-comparison",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T03:24:33Z"
             title="MCP Tools & Platforms Comparison"
             description="Comparing MCP server options, clients, and platforms. What to use for different needs."
             category="Setup"

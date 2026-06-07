@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, Code, Terminal, GitBranch, Database, Shield, Cpu, Layers, Workflow, Server } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP for Developers: Build AI Faster",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCP for Developers: Build AI Faster",
   description: "How developers use MCP to build AI-powered tools and automate workflows. Skip the boilerplate and ship features that matter.",
   path: "/use-cases/developers",
   type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
       title="MCP for Developers"
       description="Build AI-powered integrations faster. Skip the boilerplate. Ship features that matter."
     >

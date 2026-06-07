@@ -10,7 +10,21 @@ interface StandardLayoutProps {
     children: ReactNode;
     title?: string;
     description?: string;
+    publishedAt?: string;
+    updatedAt?: string;
 }
+
+const formatDate = (isoString?: string) => {
+    if (!isoString) return "";
+    const d = new Date(isoString);
+    if (isNaN(d.getTime())) return isoString;
+    return d.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        timeZone: 'UTC'
+    });
+};
 
 const DEFAULT_RELATED: RelatedItem[] = [
     { title: "What is MCP?", description: "Learn the fundamentals of the Model Context Protocol.", link: "/guides/what-is-mcp", readTime: "8 min", category: "Fundamentals" },
@@ -20,7 +34,7 @@ const DEFAULT_RELATED: RelatedItem[] = [
 
 import { PageSchema } from '@/components/PageSchema';
 
-export function StandardLayout({ children, title, description }: StandardLayoutProps) {
+export function StandardLayout({ children, title, description, publishedAt, updatedAt }: StandardLayoutProps) {
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Navbar />
@@ -30,6 +44,8 @@ export function StandardLayout({ children, title, description }: StandardLayoutP
                     <PageSchema
                         title={title || ''}
                         description={description || ''}
+                        datePublished={publishedAt}
+                        dateModified={updatedAt}
                     />
 
                     {/* Breadcrumb */}
@@ -39,7 +55,26 @@ export function StandardLayout({ children, title, description }: StandardLayoutP
                     {(title || description) && (
                         <div className="mb-12 max-w-4xl">
                             {title && <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">{title}</h1>}
-                            {description && <p className="text-xl text-slate-600 leading-relaxed">{description}</p>}
+                            {description && <p className="text-xl text-slate-600 leading-relaxed mb-6">{description}</p>}
+                            
+                            {updatedAt && (
+                                <div className="flex flex-col gap-2 text-sm text-slate-500 border-t border-b border-slate-100 py-4">
+                                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                                        <span className="font-semibold text-slate-800">By Jason Laveglia</span>
+                                        {publishedAt && (
+                                            <>
+                                                <span>·</span>
+                                                <span>Published {formatDate(publishedAt)}</span>
+                                            </>
+                                        )}
+                                        <span>·</span>
+                                        <span>Updated {formatDate(updatedAt)}</span>
+                                    </div>
+                                    <p className="text-slate-500 text-xs m-0">
+                                        Jason builds production MCP systems on <a href="https://fighthoa.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">FightHOA</a> daily.
+                                    </p>
+                                </div>
+                            )}
                         </div>
                     )}
 

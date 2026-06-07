@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { Star, Quote, Clock, CheckCircle2, Users, Rocket, BarChart, MessageSquare, ThumbsUp, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCPMadeSimple Reviews & Testimonials",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCPMadeSimple Reviews & Testimonials",
     description: "What people say about learning MCP with MCPMadeSimple. Real results and feedback.",
     path: "/articles/mcpmadesimple-reviews-and-testimonials",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
             title="MCPMadeSimple Reviews & Testimonials"
             description="What people say about learning MCP with MCPMadeSimple. Real results and feedback."
             category="Security"

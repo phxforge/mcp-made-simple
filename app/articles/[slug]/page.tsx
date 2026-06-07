@@ -25,6 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: article.description,
     path: `/articles/${article.slug}`,
     type: "article",
+    publishedTime: article.publishedAt,
+    modifiedTime: article.updatedAt,
     category: article.category
   });
 }
@@ -58,6 +60,8 @@ export default async function ArticlePage({ params }: PageProps) {
       parentPillar={{ title: article.parentPillarTitle, slug: article.parentPillar }}
       tools={article.toolPages}
       useCases={article.useCasePages}
+      publishedAt={article.publishedAt}
+      updatedAt={article.updatedAt}
     >
       {/* Dynamic Content would go here. For now, we keep the static placeholder text or render a generic body */}
       <div className="lead text-xl text-slate-600 mb-8">

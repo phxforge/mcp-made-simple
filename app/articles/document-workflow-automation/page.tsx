@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, FileText, Search, FolderOpen, Scissors, FileDiff, Database, Copy, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Document Workflow Automation with MCP | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Document Workflow Automation with MCP | MCP Made Simple",
     description: "Automate document discovery, summarization, and organization. Stop drowning in files.",
     path: "/articles/document-workflow-automation",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Document Workflow Automation with MCP"
         >
             {/* 1. OPENING */}

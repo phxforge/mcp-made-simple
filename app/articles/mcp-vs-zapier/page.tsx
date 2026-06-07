@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Zap, Brain, Settings, CreditCard, RotateCw, GitCompare, MousePointer, Info } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP vs Zapier: Which Should You Use? | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "MCP vs Zapier: Which Should You Use? | MCP Made Simple",
     description: "MCP vs Zapier comparison. When to use AI integration vs automation, cost comparison, and why you might want both.",
     path: "/articles/mcp-vs-zapier",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="MCP vs Zapier: Which Should You Use?"
         >
             {/* 1. OPENING */}

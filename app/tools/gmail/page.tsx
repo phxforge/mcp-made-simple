@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, Mail, Edit3, Inbox, Filter, Shield, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Gmail | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:41:07Z",
+title: "Connect Claude to Gmail | MCP Made Simple",
   description: "Gmail MCP integration guide. Read, search, and draft emails with Claude AI. Triage your inbox faster. Setup instructions and workflows.",
   path: "/tools/gmail",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:41:07Z"
       title="Connect Claude to Gmail"
       description="Read, search, draft, and manage your email with AI assistance."
     >

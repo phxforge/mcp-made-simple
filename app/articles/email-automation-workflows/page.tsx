@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Mail, Filter, FileSpreadsheet, Clock, Search, MessageSquare, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Email Automation Workflows with MCP | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Email Automation Workflows with MCP | MCP Made Simple",
     description: "Auto-categorize emails, extract data to spreadsheets, and automate follow-ups. Cut email time by 50%.",
     path: "/articles/email-automation-workflows",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Email Automation Workflows with MCP"
         >
             {/* 1. OPENING */}

@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Code2, FileText, MousePointer, Shield, Star, HelpCircle, HardDrive, Terminal } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Connecting AI Without Coding: MCP Guide",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "Connecting AI Without Coding: MCP Guide",
     description: "You don't need to code to use MCP. Visual guide for non-developers. Copy-paste setup, no programming required.",
     path: "/articles/connecting-ai-without-coding",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
             title="Connecting AI Without Coding: Non-Technical MCP Guide"
         >
             {/* 1. OPENING */}

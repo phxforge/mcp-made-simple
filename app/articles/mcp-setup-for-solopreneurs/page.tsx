@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Terminal, FileJson, Play, AlertCircle, HardDrive, Download, Settings, MousePointer } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Setup for Solopreneurs: No-Code Guide | MCP Made Simple",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-05T14:38:48-07:00",
+title: "MCP Setup for Solopreneurs: No-Code Guide | MCP Made Simple",
     description: "A step-by-step, no-code guide for non-technical business owners to set up MCP. Get Claude connected to your files in 15 minutes.",
     path: "/articles/mcp-setup-for-solopreneurs",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-05T14:38:48-07:00"
             title="MCP Setup for Solopreneurs: No-Code Guide"
         >
             {/* 1. OPENING */}

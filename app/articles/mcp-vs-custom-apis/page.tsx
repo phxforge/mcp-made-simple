@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Check, X, Clock, Code, Server, Lock, Settings, Zap, Database, ArrowRight, GitBranch } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP vs Custom APIs | MCP Made Simple",
+    modifiedTime: "2026-02-02T01:53:49Z",
+title: "MCP vs Custom APIs | MCP Made Simple",
     description: "When to use MCP versus building custom API integrations. Decision framework for developers.",
     path: "/articles/mcp-vs-custom-apis",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T01:53:49Z"
             title="MCP vs Custom APIs"
             description="When to use MCP versus building custom API integrations. Decision framework for developers."
             category="Comparison"

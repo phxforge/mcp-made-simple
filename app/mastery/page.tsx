@@ -7,7 +7,9 @@ import { CheckCircle, Check, Star, Users, Clock, Shield, PlayCircle, FileText, S
 import { PageSchema } from '@/components/PageSchema';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Mastery: Complete Training Course | MCP Made Simple",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCP Mastery: Complete Training Course | MCP Made Simple",
     description: "Master MCP in 30 days. Hands-on training, 50+ workflows, expert support. Save 15-20 hours per week with AI automation.",
     path: "/mastery",
     type: "website"
@@ -15,10 +17,12 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function MasteryPage() {
     return (
-        <ConversionLayout>
+        <ConversionLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00" >
             <PageSchema
                 title="MCP Mastery"
                 description="Master MCP in 30 days. Hands-on training, 50+ workflows, expert support. Save 15-20 hours per week with AI automation."
+                datePublished="2026-02-05T07:24:32-07:00"
+                dateModified="2026-06-06T12:28:05-07:00"
             />
             {/* 1. HERO SECTION */}
             <section className="text-center mb-16 px-4">

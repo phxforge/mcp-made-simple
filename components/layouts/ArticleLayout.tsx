@@ -15,6 +15,8 @@ interface ArticleLayoutProps {
     description?: string;
     category?: string;
     publishDate?: string;
+    publishedAt?: string;
+    updatedAt?: string;
     readTime?: string;
     relatedArticles?: RelatedItem[];
     parentPillar?: { title: string; slug: string };
@@ -35,12 +37,26 @@ const formatSlug = (slug: string) => {
     return slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 };
 
+const formatDate = (isoString?: string) => {
+    if (!isoString) return "";
+    const d = new Date(isoString);
+    if (isNaN(d.getTime())) return isoString;
+    return d.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        timeZone: 'UTC'
+    });
+};
+
 export function ArticleLayout({
     children,
     title,
     description,
     category = "Article",
     publishDate,
+    publishedAt,
+    updatedAt,
     readTime,
     relatedArticles,
     parentPillar,
@@ -56,7 +72,8 @@ export function ArticleLayout({
                     <PageSchema
                         title={title}
                         description={description}
-                        datePublished={publishDate}
+                        datePublished={publishedAt || publishDate}
+                        dateModified={updatedAt}
                     />
 
                     {/* Breadcrumb */}
@@ -75,10 +92,31 @@ export function ArticleLayout({
                                 {description}
                             </p>
                         )}
-                        <div className="flex items-center gap-4 text-sm text-slate-500 border-t border-b border-slate-100 py-4">
-                            <span>{publishDate || "Feb 1, 2026"}</span>
-                            <span>•</span>
-                            <span>{readTime || "5 min read"}</span>
+                        <div className="flex flex-col gap-2 text-sm text-slate-500 border-t border-b border-slate-100 py-4">
+                            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                                <span className="font-semibold text-slate-800">By Jason Laveglia</span>
+                                {(publishedAt || publishDate) && (
+                                    <>
+                                        <span>·</span>
+                                        <span>Published {formatDate(publishedAt || publishDate)}</span>
+                                    </>
+                                )}
+                                {updatedAt && (
+                                    <>
+                                        <span>·</span>
+                                        <span>Updated {formatDate(updatedAt)}</span>
+                                    </>
+                                )}
+                                {readTime && (
+                                    <>
+                                        <span>·</span>
+                                        <span>{readTime}</span>
+                                    </>
+                                )}
+                            </div>
+                            <p className="text-slate-500 text-xs m-0">
+                                Jason builds production MCP systems on <a href="https://fighthoa.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">FightHOA</a> daily.
+                            </p>
                         </div>
                     </header>
 

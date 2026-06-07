@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Shield, Lock, Eye, Server, Key, AlertTriangle, CheckSquare, XCircle, Search, Network, Users, FileText } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Security Best Practices | MCP Made Simple",
+    modifiedTime: "2026-02-02T01:50:26Z",
+title: "MCP Security Best Practices | MCP Made Simple",
     description: "Security checklist for MCP users. Credential management, access controls, and safe usage patterns.",
     path: "/articles/mcp-security-best-practices",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T01:50:26Z"
             title="MCP Security Best Practices"
             description="Security checklist for MCP users. Credential management, access controls, and safe usage patterns."
             category="Security"

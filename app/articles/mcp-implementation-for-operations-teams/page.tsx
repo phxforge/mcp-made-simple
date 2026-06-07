@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Target, Users, BarChart, Rocket, CheckSquare, AlertTriangle, Shield, Clock, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Implementation for Operations Teams | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "MCP Implementation for Operations Teams | MCP Made Simple",
     description: "Step-by-step rollout guide for operations managers. From pilot to full team deployment.",
     path: "/articles/mcp-implementation-for-operations-teams",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="MCP Implementation for Operations Teams"
         >
             {/* 1. OPENING */}

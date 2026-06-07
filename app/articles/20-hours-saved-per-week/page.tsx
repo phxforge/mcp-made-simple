@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, TrendingUp, Calendar, FileText, Mail, BarChart } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "20 Hours Saved Per Week Case Study",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "20 Hours Saved Per Week Case Study",
     description: "How a freelance consultant automated 15 hours of admin work using MCP. A week-by-week breakdown.",
     path: "/articles/20-hours-saved-per-week",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
             title="20 Hours Saved Per Week: A Solopreneur Case Study"
         >
             {/* 1. OPENING */}

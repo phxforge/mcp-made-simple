@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Unplug, Zap, Clock, ArrowRight, UserPlus, FileText, CheckCircle2, AlertTriangle, Workflow } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "What Problem Does MCP Solve? | MCP Made Simple",
+    modifiedTime: "2026-02-02T03:13:31Z",
+title: "What Problem Does MCP Solve? | MCP Made Simple",
     description: "The core problem MCP addresses: fragmented AI-tool integration. Why this matters.",
     path: "/articles/what-problem-does-mcp-solve",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T03:13:31Z"
             title="What Problem Does MCP Solve?"
             description="The core problem MCP addresses: fragmented AI-tool integration. Why this matters."
             category="Fundamentals"

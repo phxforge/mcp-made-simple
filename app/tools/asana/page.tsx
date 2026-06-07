@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, CheckCircle, Plus, LayoutList, BarChart2, Shield, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Asana | MCP Made Simple",
+    modifiedTime: "2026-02-01T20:01:51Z",
+title: "Connect Claude to Asana | MCP Made Simple",
   description: "Asana MCP integration guide. Manage projects, create tasks, and automate team workflows with Claude AI. Setup instructions and examples included.",
   path: "/tools/asana",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T20:01:51Z"
       title="Connect Claude to Asana"
       description="Manage projects, create tasks, and automate team workflows with AI assistance."
     >

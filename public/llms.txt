@@ -1,0 +1,17 @@
+# MCP Made Simple
+
+Master Claude Desktop & MCP: local automations, security configs, pre-built workflows
+
+## Main Guides
+- [What is MCP?](https://www.mcpmadesimple.com/guides/what-is-mcp)
+- [15-Minute Setup Guide](https://www.mcpmadesimple.com/guides/setup)
+- [Security & Trust Guide](https://www.mcpmadesimple.com/guides/is-mcp-safe)
+
+## Integrations
+- [Claude + Gmail](https://www.mcpmadesimple.com/tools/gmail)
+- [Claude + Google Drive](https://www.mcpmadesimple.com/tools/google-drive)
+- [Claude + GitHub](https://www.mcpmadesimple.com/tools/github)
+
+## About
+- [About the author](https://www.mcpmadesimple.com/about): Jason Laveglia — solo founder running MCP in production on FightHOA.
+- Contact: jason@mcpmadesimple.com

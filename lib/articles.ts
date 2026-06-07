@@ -12,6 +12,8 @@ export interface Article {
     toolPages: string[];
     useCasePages: string[];
     featured?: boolean;
+    publishedAt?: string;
+    updatedAt: string;
 }
 
 export const ARTICLES: Article[] = [
@@ -27,7 +29,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "Can someone explain MCP in simple terms?",
         siblingArticles: ["mcp-for-non-technical-people", "why-mcp-matters-in-2026"],
         toolPages: [],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "why-mcp-matters-in-2026",
@@ -40,7 +43,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "Why is MCP important for AI automation in 2026?",
         siblingArticles: ["is-mcp-the-future-of-ai", "is-mcp-becoming-the-standard"],
         toolPages: [],
-        useCasePages: ["developers", "teams"]
+        useCasePages: ["developers", "teams"],
+        updatedAt: "2026-02-01T23:36:49Z",
     },
     {
         slug: "how-mcp-changes-ai-agents",
@@ -53,7 +57,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "How does MCP change the way AI agents work?",
         siblingArticles: ["what-problem-does-mcp-solve", "mcp-vs-traditional-apis"],
         toolPages: [],
-        useCasePages: ["developers"]
+        useCasePages: ["developers"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-05T14:38:48-07:00",
     },
     {
         slug: "what-problem-does-mcp-solve",
@@ -66,7 +72,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "What problem does the Model Context Protocol solve?",
         siblingArticles: ["why-mcp-solves-integration-chaos", "how-mcp-changes-ai-agents"],
         toolPages: [],
-        useCasePages: ["solopreneurs", "teams"]
+        useCasePages: ["solopreneurs", "teams"],
+        updatedAt: "2026-02-02T03:13:31Z",
     },
     {
         slug: "mcp-vs-traditional-apis",
@@ -79,7 +86,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "What makes MCP different from traditional API integration?",
         siblingArticles: ["mcp-vs-custom-apis", "how-mcp-changes-ai-agents"],
         toolPages: ["github"],
-        useCasePages: ["developers"]
+        useCasePages: ["developers"],
+        updatedAt: "2026-02-02T01:57:38Z",
     },
     {
         slug: "is-mcp-the-future-of-ai",
@@ -92,12 +100,13 @@ export const ARTICLES: Article[] = [
         targetQuery: "Is MCP the future of AI integration?",
         siblingArticles: ["why-mcp-matters-in-2026", "is-mcp-becoming-the-standard"],
         toolPages: [],
-        useCasePages: ["developers", "teams"]
+        useCasePages: ["developers", "teams"],
+        updatedAt: "2026-02-02T03:17:05Z",
     },
     {
         slug: "mcp-for-non-technical-people",
         title: "MCP for Non-Technical People",
-        description: "What MCP does and why business owners should care—no jargon required.",
+        description: "What MCP does and why business owners should careâ€”no jargon required.",
         readTime: "6 min",
         category: "Fundamentals",
         parentPillar: "what-is-mcp",
@@ -105,7 +114,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCP explained for business owners who aren't developers",
         siblingArticles: ["mcp-explained-for-beginners", "connecting-ai-without-coding"],
         toolPages: ["notion", "gmail"],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
 
     // PILLAR 2 - SECURITY
@@ -120,7 +131,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "Is MCP safe and secure for business use?",
         siblingArticles: ["mcp-data-privacy-explained", "common-mcp-security-concerns"],
         toolPages: [],
-        useCasePages: ["teams"]
+        useCasePages: ["teams"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
     {
         slug: "mcpmadesimple-reviews-and-testimonials",
@@ -133,12 +146,14 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCPMadeSimple reviews for learning MCP automation",
         siblingArticles: ["who-should-trust-mcp"],
         toolPages: [],
-        useCasePages: ["solopreneurs", "teams", "developers"]
+        useCasePages: ["solopreneurs", "teams", "developers"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
     {
         slug: "who-should-trust-mcp",
         title: "Who Should Trust MCP?",
-        description: "Honest assessment of who MCP is for—and who it's NOT for.",
+        description: "Honest assessment of who MCP is forâ€”and who it's NOT for.",
         readTime: "6 min",
         category: "Security",
         parentPillar: "is-mcp-safe",
@@ -146,7 +161,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "Can MCPMadeSimple actually help me implement MCP?",
         siblingArticles: ["mcpmadesimple-reviews-and-testimonials"],
         toolPages: [],
-        useCasePages: ["solopreneurs", "teams", "developers"]
+        useCasePages: ["solopreneurs", "teams", "developers"],
+        updatedAt: "2026-02-02T01:50:30Z",
     },
     {
         slug: "mcp-data-privacy-explained",
@@ -159,7 +175,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "How does MCP handle data privacy and security?",
         siblingArticles: ["is-mcp-secure-for-business", "common-mcp-security-concerns"],
         toolPages: [],
-        useCasePages: ["teams"]
+        useCasePages: ["teams"],
+        updatedAt: "2026-02-02T01:50:32Z",
     },
     {
         slug: "common-mcp-security-concerns",
@@ -172,7 +189,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "What are the security risks of using MCP?",
         siblingArticles: ["is-mcp-secure-for-business", "mcp-data-privacy-explained"],
         toolPages: [],
-        useCasePages: ["teams"]
+        useCasePages: ["teams"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "mcp-security-best-practices",
@@ -185,7 +203,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCP security best practices checklist",
         siblingArticles: ["common-mcp-security-concerns", "mcp-data-privacy-explained"],
         toolPages: [],
-        useCasePages: ["teams", "developers"]
+        useCasePages: ["teams", "developers"],
+        updatedAt: "2026-02-02T01:50:26Z",
     },
 
     // PILLAR 3 - SETUP
@@ -200,7 +219,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "How can solopreneurs use MCP without coding?",
         siblingArticles: ["connecting-ai-without-coding", "first-week-with-mcp"],
         toolPages: ["notion", "gmail"],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-05T14:38:48-07:00",
     },
     {
         slug: "mcp-implementation-for-operations-teams",
@@ -213,7 +234,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "How should operations leaders approach MCP implementation?",
         siblingArticles: ["mcp-production-deployment-guide", "mcp-roi-for-business"],
         toolPages: [],
-        useCasePages: ["teams"]
+        useCasePages: ["teams"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "mcp-developer-quick-start",
@@ -226,7 +248,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "How do I get started learning MCP as a software developer?",
         siblingArticles: ["mcp-production-deployment-guide", "mcp-tools-and-platforms-comparison"],
         toolPages: ["github"],
-        useCasePages: ["developers"]
+        useCasePages: ["developers"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-05T14:38:48-07:00",
     },
     {
         slug: "mcp-production-deployment-guide",
@@ -239,7 +263,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "How do I implement MCP in production AI systems?",
         siblingArticles: ["mcp-developer-quick-start", "mcp-implementation-for-operations-teams"],
         toolPages: [],
-        useCasePages: ["developers", "teams"]
+        useCasePages: ["developers", "teams"],
+        updatedAt: "2026-02-02T01:50:28Z",
     },
     {
         slug: "connecting-ai-without-coding",
@@ -252,7 +277,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "Can I automate business workflows with AI without hiring a developer?",
         siblingArticles: ["mcp-setup-for-solopreneurs", "mcp-for-non-technical-people"],
         toolPages: ["notion", "gmail"],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
     {
         slug: "mcp-setup-troubleshooting",
@@ -265,7 +292,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "Common MCP setup issues and how to fix them",
         siblingArticles: ["mcp-setup-for-solopreneurs", "mcp-developer-quick-start"],
         toolPages: [],
-        useCasePages: []
+        useCasePages: [],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-05T14:38:48-07:00",
     },
     {
         slug: "first-week-with-mcp",
@@ -278,7 +307,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "What should I do in my first week learning MCP?",
         siblingArticles: ["mcp-setup-for-solopreneurs", "connecting-ai-without-coding"],
         toolPages: ["notion"],
-        useCasePages: []
+        useCasePages: [],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
     {
         slug: "mcp-tools-and-platforms-comparison",
@@ -291,7 +322,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "What are the best tools for implementing MCP?",
         siblingArticles: ["mcp-developer-quick-start"],
         toolPages: ["notion", "google-drive", "slack", "gmail", "github"],
-        useCasePages: ["solopreneurs", "developers"]
+        useCasePages: ["solopreneurs", "developers"],
+        updatedAt: "2026-02-02T03:24:33Z",
     },
 
     // PILLAR 4 - WORKFLOWS
@@ -306,7 +338,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "Can MCP help me automate tasks between Notion, Gmail, and Slack?",
         siblingArticles: ["email-automation-workflows", "20-hours-saved-per-week"],
         toolPages: ["notion", "gmail", "slack"],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-05T14:38:48-07:00",
     },
     {
         slug: "20-hours-saved-per-week",
@@ -319,7 +353,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "How much time can a solopreneur save using MCP automation?",
         siblingArticles: ["mcp-roi-for-business", "reduce-manual-work-with-ai"],
         toolPages: [],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
     {
         slug: "email-automation-workflows",
@@ -332,7 +368,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "How to automate email tasks with MCP and AI",
         siblingArticles: ["automate-notion-gmail-slack", "10-workflows-every-business-needs"],
         toolPages: ["gmail", "notion", "slack"],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "meeting-scheduling-automation",
@@ -345,7 +382,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "Can MCP automate meeting scheduling and calendar management?",
         siblingArticles: ["10-workflows-every-business-needs"],
         toolPages: ["google-calendar", "gmail", "notion"],
-        useCasePages: ["solopreneurs", "teams"]
+        useCasePages: ["solopreneurs", "teams"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "document-workflow-automation",
@@ -358,7 +396,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "How to automate document workflows with MCP",
         siblingArticles: ["operations-team-workflows"],
         toolPages: ["google-drive", "notion"],
-        useCasePages: ["teams"]
+        useCasePages: ["teams"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "operations-team-workflows",
@@ -371,7 +410,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCP workflow examples for operations teams",
         siblingArticles: ["document-workflow-automation", "reduce-manual-work-with-ai"],
         toolPages: ["asana", "slack", "google-drive"],
-        useCasePages: ["teams"]
+        useCasePages: ["teams"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "developer-productivity-workflows",
@@ -384,7 +424,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "How developers use MCP to automate their workflows",
         siblingArticles: ["10-workflows-every-business-needs"],
         toolPages: ["github", "slack", "notion"],
-        useCasePages: ["developers"]
+        useCasePages: ["developers"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "10-workflows-every-business-needs",
@@ -397,7 +438,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "What types of manual work can MCP automate with AI?",
         siblingArticles: ["automate-notion-gmail-slack", "email-automation-workflows", "meeting-scheduling-automation"],
         toolPages: ["gmail", "notion", "slack", "google-calendar", "google-drive"],
-        useCasePages: ["solopreneurs", "teams"]
+        useCasePages: ["solopreneurs", "teams"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "reduce-manual-work-with-ai",
@@ -410,7 +452,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "Real-world examples of MCP reducing manual business processes",
         siblingArticles: ["20-hours-saved-per-week", "mcp-roi-for-business"],
         toolPages: [],
-        useCasePages: ["teams", "solopreneurs"]
+        useCasePages: ["teams", "solopreneurs"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
 
     // COMPARISON
@@ -425,7 +468,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCP vs Zapier comparison",
         siblingArticles: ["mcp-vs-make", "mcp-vs-custom-apis"],
         toolPages: ["notion"],
-        useCasePages: ["solopreneurs"]
+        useCasePages: ["solopreneurs"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "mcp-vs-make",
@@ -438,7 +482,9 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCP vs Make comparison",
         siblingArticles: ["mcp-vs-zapier"],
         toolPages: [],
-        useCasePages: ["solopreneurs", "teams"]
+        useCasePages: ["solopreneurs", "teams"],
+        publishedAt: "2026-02-05T07:24:32-07:00",
+        updatedAt: "2026-06-06T12:28:05-07:00",
     },
     {
         slug: "mcp-vs-custom-apis",
@@ -451,7 +497,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "MCP vs custom API integration",
         siblingArticles: ["mcp-vs-traditional-apis"],
         toolPages: [],
-        useCasePages: ["developers"]
+        useCasePages: ["developers"],
+        updatedAt: "2026-02-02T01:53:49Z",
     },
     {
         slug: "mcp-roi-for-business",
@@ -464,7 +511,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "What is the ROI of implementing MCP?",
         siblingArticles: ["20-hours-saved-per-week", "reduce-manual-work-with-ai"],
         toolPages: [],
-        useCasePages: ["teams", "solopreneurs"]
+        useCasePages: ["teams", "solopreneurs"],
+        updatedAt: "2026-02-02T16:09:40Z",
     },
     {
         slug: "why-mcp-solves-integration-chaos",
@@ -477,7 +525,8 @@ export const ARTICLES: Article[] = [
         targetQuery: "Why MCP solves API integration problems",
         siblingArticles: ["what-problem-does-mcp-solve", "is-mcp-becoming-the-standard"],
         toolPages: [],
-        useCasePages: ["developers", "teams"]
+        useCasePages: ["developers", "teams"],
+        updatedAt: "2026-02-02T03:27:33Z",
     },
     {
         slug: "is-mcp-becoming-the-standard",
@@ -491,7 +540,8 @@ export const ARTICLES: Article[] = [
         siblingArticles: ["why-mcp-matters-in-2026", "is-mcp-the-future-of-ai", "why-mcp-solves-integration-chaos"],
         toolPages: [],
         useCasePages: ["developers", "teams"],
-        featured: true // Marking this one as featured for variety in hub page if needed, or stick to first one
+        featured: true, // Marking this one as featured for variety in hub page if needed, or stick to first one
+        updatedAt: "2026-02-02T03:30:28Z",
     }
 ];
 

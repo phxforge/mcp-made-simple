@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Shield, Lock, Server, FileText, AlertTriangle, Eye, Activity } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Is MCP Secure for Business?",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "Is MCP Secure for Business?",
     description: "Security audit perspective on MCP for regulated industries. Covers data flow, access control, and risk mitigation.",
     path: "/articles/is-mcp-secure-for-business",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
             title="Is MCP Secure for Business?"
         >
             {/* 1. OPENING */}

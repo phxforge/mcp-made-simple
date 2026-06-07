@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Clock, CheckCircle, BarChart3, AlertTriangle, Target, Settings, Filter, RefreshCw, Layers } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Reduce Manual Work with AI Automation | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Reduce Manual Work with AI Automation | MCP Made Simple",
     description: "Identify and automate repetitive tasks in your workflow. A practical framework to reclaim hours of your week.",
     path: "/articles/reduce-manual-work-with-ai",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Reduce Manual Work with AI Automation"
         >
             {/* 1. OPENING */}

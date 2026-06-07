@@ -4,6 +4,8 @@ import { Lock } from 'lucide-react';
 
 interface ConversionLayoutProps {
     children: ReactNode;
+    publishedAt?: string;
+    updatedAt?: string;
 }
 
 export function ConversionLayout({ children }: ConversionLayoutProps) {

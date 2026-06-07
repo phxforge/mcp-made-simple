@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Shield, Server, Lock, Settings, Users, Activity, CheckSquare, AlertTriangle, FileText, ArrowRight, Database, Network, Rocket } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Production Deployment Guide | MCP Made Simple",
+    modifiedTime: "2026-02-02T01:50:28Z",
+title: "MCP Production Deployment Guide | MCP Made Simple",
     description: "Enterprise deployment of MCP. Security hardening, monitoring, and organizational rollout.",
     path: "/articles/mcp-production-deployment-guide",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T01:50:28Z"
             title="MCP Production Deployment Guide"
             description="Enterprise deployment of MCP. Security hardening, monitoring, and organizational rollout."
             category="Setup"

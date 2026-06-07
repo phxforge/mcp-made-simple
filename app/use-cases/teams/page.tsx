@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, BarChart2, Shield, Zap, MessageSquare, FileText, Search, Briefcase, Calendar } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP for Teams: Streamline Operations",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCP for Teams: Streamline Operations",
   description: "How operations teams use MCP to automate status updates, data entry, and cross-tool workflows. Reduce manual work by 60-80%.",
   path: "/use-cases/teams",
   type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
       title="MCP for Teams"
       description="Streamline operations, eliminate repetitive work, and give your team hours back every week."
     >

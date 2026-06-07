@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Lock, Zap, Server, Terminal } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "What is MCP? The Complete Guide",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "What is MCP? The Complete Guide",
   description: "Learn what MCP (Model Context Protocol) is, how it works, and why it's changing AI automation. Complete beginner's guide with examples.",
   path: "/guides/what-is-mcp",
   type: "website"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
       title="What is MCP? The Complete Guide to the Model Context Protocol"
       description="Everything you need to understand MCP, why it matters, and how it changes AI automation."
     >

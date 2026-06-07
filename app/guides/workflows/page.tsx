@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, Clock, Zap, MessageSquare, Briefcase, FileText, Code, CheckCircle, Search, Mail, Calendar } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "MCP Workflow Examples & Automations",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-06T12:28:05-07:00",
+title: "MCP Workflow Examples & Automations",
   description: "Real MCP workflow examples to automate email, calendar, documents, and more. Copy these automations to save 10-20 hours per week.",
   path: "/guides/workflows",
   type: "website"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-06T12:28:05-07:00"
       title="MCP Workflow Examples: Real Automations You Can Build Today"
       description="Copy these workflows to save 10-20 hours per week. From simple email triage to complex multi-tool automations."
     >

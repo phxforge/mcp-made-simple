@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Network, Server, Globe, Database, ArrowRight, Share2, Box, Code, Lock, RefreshCw, Layers } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP vs Traditional APIs | MCP Made Simple",
+    modifiedTime: "2026-02-02T01:57:38Z",
+title: "MCP vs Traditional APIs | MCP Made Simple",
     description: "How MCP differs from REST APIs and webhooks. Technical comparison for integration architects.",
     path: "/articles/mcp-vs-traditional-apis",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T01:57:38Z"
             title="MCP vs Traditional APIs"
             description="How MCP differs from REST APIs and webhooks. Technical comparison for integration architects."
             category="Comparison"

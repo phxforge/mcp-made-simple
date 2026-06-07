@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Calendar, Clock, Users, FileText, CheckCircle, Copy, Search, MessageSquare, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Meeting Scheduling Automation with MCP | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Meeting Scheduling Automation with MCP | MCP Made Simple",
     description: "Automate meeting prep, scheduling conflicts, and follow-ups. Cut the busywork out of your calendar.",
     path: "/articles/meeting-scheduling-automation",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Meeting Scheduling Automation with MCP"
         >
             {/* 1. OPENING */}

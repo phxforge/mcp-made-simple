@@ -7,6 +7,7 @@ interface PageMetaProps {
     path: string; // e.g., "/articles/mcp-vs-zapier"
     type?: "website" | "article";
     publishedTime?: string; // for articles
+    modifiedTime?: string; // for articles
     category?: string; // for articles
 }
 
@@ -16,6 +17,7 @@ export function generatePageMetadata({
     path,
     type = "website",
     publishedTime,
+    modifiedTime,
     category
 }: PageMetaProps): Metadata {
     const suffix = `| ${siteConfig.siteName}`;
@@ -44,6 +46,7 @@ export function generatePageMetadata({
             ],
             ...(type === 'article' && {
                 publishedTime: publishedTime,
+                modifiedTime: modifiedTime,
                 section: category,
             }),
         },

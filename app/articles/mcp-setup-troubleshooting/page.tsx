@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, AlertTriangle, Terminal, Settings, RefreshCw, FileCode, HelpCircle, AlertOctagon } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "MCP Setup Troubleshooting Guide | MCP Made Simple",
+    publishedTime: "2026-02-05T07:24:32-07:00",
+    modifiedTime: "2026-06-05T14:38:48-07:00",
+title: "MCP Setup Troubleshooting Guide | MCP Made Simple",
     description: "Fix common MCP setup issues: connection errors, config problems, and tool access not working.",
     path: "/articles/mcp-setup-troubleshooting",
     type: "article"
@@ -13,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout publishedAt="2026-02-05T07:24:32-07:00" updatedAt="2026-06-05T14:38:48-07:00"
             title="MCP Setup Troubleshooting Guide"
         >
             {/* 1. OPENING */}

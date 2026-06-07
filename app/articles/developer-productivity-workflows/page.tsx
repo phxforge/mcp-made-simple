@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, GitBranch, Code2, AlertCircle, FileCode, Terminal, Copy, BookOpen, GitMerge, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Developer Productivity Workflows with MCP | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "Developer Productivity Workflows with MCP | MCP Made Simple",
     description: "Automate code review, issue triage, and documentation. Keep your flow state while Claude handles the overhead.",
     path: "/articles/developer-productivity-workflows",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="Developer Productivity Workflows with MCP"
         >
             {/* 1. OPENING */}

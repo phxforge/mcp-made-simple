@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Shield, HelpCircle, CheckCircle, AlertTriangle, XCircle, Search, Scale, Lock, Eye, CheckSquare, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Who Should Trust MCP? | MCP Made Simple",
+    modifiedTime: "2026-02-02T01:50:30Z",
+title: "Who Should Trust MCP? | MCP Made Simple",
     description: "Evaluating if MCP is right for your security requirements. Risk assessment framework.",
     path: "/articles/who-should-trust-mcp",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T01:50:30Z"
             title="Who Should Trust MCP?"
             description="Evaluating if MCP is right for your security requirements. Risk assessment framework."
             category="Security"

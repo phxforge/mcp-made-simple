@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { TrendingUp, Award, AlertTriangle, Globe, Activity, CheckCircle2, GitMerge, BarChart, Users, Flag } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Is MCP Becoming the Standard? | MCP Made Simple",
+    modifiedTime: "2026-02-02T03:30:28Z",
+title: "Is MCP Becoming the Standard? | MCP Made Simple",
     description: "Tracking MCP adoption and ecosystem growth. Where things stand and where they're heading.",
     path: "/articles/is-mcp-becoming-the-standard",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T03:30:28Z"
             title="Is MCP Becoming the Standard?"
             description="Tracking MCP adoption and ecosystem growth. Where things stand and where they're heading."
             category="Comparison"

@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, MessageSquare, Bell, List, Users, Shield, Hash, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Slack | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:36:10Z",
+title: "Connect Claude to Slack | MCP Made Simple",
   description: "Slack MCP integration guide. Search messages, summarize channels, and automate team updates with Claude AI. Setup instructions included.",
   path: "/tools/slack",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:36:10Z"
       title="Connect Claude to Slack"
       description="Search conversations, post updates, and automate team communication with AI."
     >

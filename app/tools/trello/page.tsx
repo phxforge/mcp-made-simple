@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, Trello, Plus, Move, BarChart2, Shield, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Trello | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:59:26Z",
+title: "Connect Claude to Trello | MCP Made Simple",
   description: "Trello MCP integration guide. Manage boards, create cards, and automate project tasks with Claude AI. Setup instructions and workflows included.",
   path: "/tools/trello",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:59:26Z"
       title="Connect Claude to Trello"
       description="Manage boards, create cards, and automate task workflows with AI assistance."
     >

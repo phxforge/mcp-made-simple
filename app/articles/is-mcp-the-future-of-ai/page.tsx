@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Lightbulb, TrendingUp, History, AlertTriangle, Blocks, Network, UserCheck, ArrowRight, Zap, Target } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Is MCP the Future of AI Integration? | MCP Made Simple",
+    modifiedTime: "2026-02-02T03:17:05Z",
+title: "Is MCP the Future of AI Integration? | MCP Made Simple",
     description: "Analyzing MCP's potential as the standard for AI-tool integration. Trends and predictions.",
     path: "/articles/is-mcp-the-future-of-ai",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T03:17:05Z"
             title="Is MCP the Future of AI?"
             description="Analyzing MCP's potential as the standard for AI-tool integration. Trends and predictions."
             category="Fundamentals"

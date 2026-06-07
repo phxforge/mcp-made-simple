@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, FileText, FolderOpen, RefreshCw, Shield, Download, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Google Drive | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:32:49Z",
+title: "Connect Claude to Google Drive | MCP Made Simple",
   description: "Google Drive MCP integration guide. Search, read, and organize your Drive files with Claude AI. Setup instructions and example workflows.",
   path: "/tools/google-drive",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:32:49Z"
       title="Connect Claude to Google Drive"
       description="Search, read, and organize your Google Drive files with AI assistance."
     >

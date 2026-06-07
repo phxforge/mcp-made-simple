@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, History, Unplug, Zap, Globe, Layers, TrendingUp, Lock, Clock } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "Why MCP Matters in 2026 | MCP Made Simple",
+    modifiedTime: "2026-02-01T23:36:49Z",
+title: "Why MCP Matters in 2026 | MCP Made Simple",
     description: "The shift from chatbots to AI agents. Why MCP became the infrastructure layer for the future of productivity.",
     path: "/articles/why-mcp-matters-in-2026",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-01T23:36:49Z"
             title="Why MCP Matters in 2026"
             description="The shift from chatbots to AI agents. Why MCP became the infrastructure layer for the future of productivity."
             category="Fundamentals"

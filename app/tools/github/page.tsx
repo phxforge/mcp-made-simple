@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, GitPullRequest, Github, FileCode, CheckCircle, Shield, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to GitHub | MCP Made Simple",
+    modifiedTime: "2026-02-01T20:06:08Z",
+title: "Connect Claude to GitHub | MCP Made Simple",
   description: "GitHub MCP integration guide. Access repos, manage issues, review PRs, and automate dev workflows with Claude AI. Setup for developers.",
   path: "/tools/github",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T20:06:08Z"
       title="Connect Claude to GitHub"
       description="Access repos, manage issues, review PRs, and automate development workflows with AI."
     >

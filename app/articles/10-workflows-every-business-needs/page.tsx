@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Mail, Calendar, FileText, Search, Clock, CheckSquare, Users, FileJson, Copy, MessageSquare, Shield } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: "10 MCP Workflows Every Business Needs | MCP Made Simple",
+    modifiedTime: "2026-02-02T16:09:40Z",
+title: "10 MCP Workflows Every Business Needs | MCP Made Simple",
     description: "Pre-built workflows for email, docs, calendar and tasks. Copy-paste prompts to start saving time today.",
     path: "/articles/10-workflows-every-business-needs",
     type: "article"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ArticlePage() {
     return (
-        <ArticleLayout
+        <ArticleLayout updatedAt="2026-02-02T16:09:40Z"
             title="10 MCP Workflows Every Business Needs"
         >
             {/* 1. OPENING */}

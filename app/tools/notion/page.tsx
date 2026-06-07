@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Search, FileText, Database, Edit3, BookOpen, Shield, Command } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Connect Claude to Notion | MCP Made Simple",
+    modifiedTime: "2026-02-01T19:38:39Z",
+title: "Connect Claude to Notion | MCP Made Simple",
   description: "Notion MCP integration guide. Create pages, query databases, and automate your workspace with Claude AI. Setup instructions and workflows.",
   path: "/tools/notion",
   type: "website"
@@ -13,7 +14,7 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function Page() {
   return (
-    <StandardLayout
+    <StandardLayout updatedAt="2026-02-01T19:38:39Z"
       title="Connect Claude to Notion"
       description="Create pages, query databases, and manage your workspace with AI assistance."
     >

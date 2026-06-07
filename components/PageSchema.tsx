@@ -31,14 +31,14 @@ export function PageSchema({
 }: PageSchemaProps) {
     const pathname = usePathname();
 
-    // Only render schemas on detail pages under /guides/*, /articles/*, /tools/*, and /mastery
+    // Only render schemas on detail pages under /guides/*, /articles/*, /tools/*, /use-cases/*, and /mastery
     const segments = pathname.split('/').filter(Boolean);
     if (segments.length < 2 && pathname !== '/mastery') {
         return null;
     }
 
     const firstSegment = segments[0];
-    if (!['guides', 'articles', 'tools', 'mastery'].includes(firstSegment)) {
+    if (!['guides', 'articles', 'tools', 'mastery', 'use-cases'].includes(firstSegment)) {
         return null;
     }
 
@@ -51,6 +51,7 @@ export function PageSchema({
     else if (firstSegment === 'articles') sectionName = 'Articles';
     else if (firstSegment === 'tools') sectionName = 'Tools';
     else if (firstSegment === 'mastery') sectionName = 'Mastery';
+    else if (firstSegment === 'use-cases') sectionName = 'Use Cases';
 
     if (firstSegment !== 'mastery') {
         crumbs.push({ name: sectionName, path: `/${firstSegment}` });
@@ -62,14 +63,15 @@ export function PageSchema({
     const breadcrumbData = breadcrumbSchema(crumbs);
 
     const parsedDatePublished = parseVisualDate(datePublished);
-    const parsedDateModified = parseVisualDate(dateModified) || new Date().toISOString().split('T')[0];
+    const parsedDateModified = parseVisualDate(dateModified);
 
     const articleData = articleSchema({
         title,
         description,
         path: pathname,
         datePublished: parsedDatePublished,
-        dateModified: parsedDateModified
+        dateModified: parsedDateModified,
+        image: "/og-image.png"
     });
 
     return <SchemaMarkup schema={[breadcrumbData, articleData]} />;
