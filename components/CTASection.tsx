@@ -71,9 +71,9 @@ export function CTASection({
                     </div>
                 )}
 
-                <h2 className={`text-3xl md:text-5xl font-extrabold tracking-tight mb-6 ${currentConfig.textClass}`}>
+                <div className={`text-3xl md:text-5xl font-extrabold tracking-tight mb-6 ${currentConfig.textClass}`}>
                     {finalHeadline}
-                </h2>
+                </div>
 
                 {finalDescription && (
                     <p className={`text-xl md:text-2xl mb-10 max-w-2xl mx-auto ${currentConfig.descClass}`}>

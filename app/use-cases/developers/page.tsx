@@ -181,7 +181,7 @@ export default function Page() {
 
         {/* 7. CTA */}
         <div className="bg-slate-900 rounded-2xl p-8 md:p-12 text-center text-white not-prose my-12 shadow-lg">
-          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Build?</h2>
+          <div className="text-3xl font-bold mb-4 text-white">Ready to Build?</div>
           <p className="text-slate-300 mb-8 max-w-xl mx-auto">
             Get the Developer Operations Kit. Includes boilerplate code, CI/CD templates, and a library of pre-built MCP servers.
           </p>

@@ -6,17 +6,11 @@ import { generatePageMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
 import { StandardLayout } from '@/components/layouts/StandardLayout';
 
-export const metadata: Metadata = {
-    ...generatePageMetadata({
-        title: "Contact Support & Partnerships",
-        description: "Get in touch with the MCP Made Simple team. We prioritize support tickets and collaboration requests.",
-        path: "/contact",
-    }),
-    robots: {
-        index: false,
-        follow: true,
-    },
-};
+export const metadata: Metadata = generatePageMetadata({
+    title: "Contact Support & Partnerships",
+    description: "Get in touch with the MCP Made Simple team. We prioritize support tickets and collaboration requests.",
+    path: "/contact",
+});
 
 export default function ContactPage() {
     return (

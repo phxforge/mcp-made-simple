@@ -282,7 +282,7 @@ export default function Page() {
 
         {/* 11. CTA */}
         <div className="bg-blue-600 rounded-2xl p-8 md:p-12 text-center text-white not-prose my-12 shadow-lg">
-          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Connect Trello?</h2>
+          <div className="text-3xl font-bold mb-4 text-white">Ready to Connect Trello?</div>
           <p className="text-blue-100 mb-8 max-w-xl mx-auto">
             Get our Quick Start Kit with project management workflows and task automation templates.
           </p>

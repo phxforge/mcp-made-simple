@@ -82,7 +82,7 @@ export function Navbar() {
             <div className="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
 
                 {/* 1. Branding: MCPMadeSimple (Text) */}
-                <Link href="/" className="group flex items-center gap-2 no-underline">
+                <Link href="/" aria-label="MCP Made Simple Homepage" className="group flex items-center gap-2 no-underline">
                     <span className="text-[20px] text-[#0f172a] tracking-tight group-hover:text-[#2563eb] transition-colors">
                         MCPMade<span className="font-extrabold">Simple</span>
                     </span>
@@ -191,7 +191,7 @@ export function Navbar() {
                     >
                         {/* Header */}
                         <div className="flex items-center justify-between mb-8 max-w-[1100px] w-full mx-auto">
-                            <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link href="/" aria-label="MCP Made Simple Homepage" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                                 <span className="text-[20px] text-[#0f172a] tracking-tight">MCPMade<span className="font-extrabold">Simple</span></span>
                             </Link>
                             <button

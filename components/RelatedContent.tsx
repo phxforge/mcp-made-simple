@@ -32,7 +32,7 @@ export function RelatedContent({ heading, items }: RelatedContentProps) {
 
     return (
         <section className="w-full pb-16">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8">{heading}</h2>
+            <div className="text-2xl font-bold text-slate-900 mb-8">{heading}</div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {items.map((item, index) => {

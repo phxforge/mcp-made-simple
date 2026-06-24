@@ -335,7 +335,7 @@ export default function Page() {
 
         {/* 10. CTA */}
         <div className="bg-blue-600 rounded-2xl p-8 md:p-12 text-center text-white not-prose my-12 shadow-lg">
-          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Reclaim Your Time?</h2>
+          <div className="text-3xl font-bold mb-4 text-white">Ready to Reclaim Your Time?</div>
           <p className="text-blue-100 mb-8 max-w-xl mx-auto">
             Get the free MCP Quick Start Kit designed for solopreneurs. Includes 10 workflows, setup guides, and templates.
           </p>

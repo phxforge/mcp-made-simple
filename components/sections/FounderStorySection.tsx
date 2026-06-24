@@ -21,8 +21,9 @@ export function FounderStorySection() {
                                 <Image
                                     src="/images/about/jason-headshot.jpg"
                                     alt="Jason Laveglia - Founder of MCP Made Simple"
-                                    fill
-                                    className="object-cover"
+                                    width={400}
+                                    height={400}
+                                    className="w-full h-full object-cover"
                                 />
                             </div>
                         </div>
